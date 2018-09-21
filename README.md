@@ -1,4 +1,4 @@
-# Hasee-OS-X
+# Hasee-OS-X说明
 
 
 
@@ -20,4 +20,4 @@
 |  键盘、触摸板   |             PS/2 标准键盘 + ELAN Clickpad              |
 
 
-​	
+	
