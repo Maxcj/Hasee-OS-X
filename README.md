@@ -9,7 +9,7 @@
 |       CPU       |               英特尔 第四代酷睿 i5-4210M               |
 |      主板       | Type2 - Board Vendor Name1 Type2 - Board Product Name1 |
 |      内存       |                 三星 DDR3L 1600MHz 8GB                 |
-| 硬盘（Windows） |        三星  MZMPC128HBFU-000MV (120GB固态硬盘)        |
+| 硬盘（Windows） |        三星  MZMPC128HBFU-000MV (128GB固态硬盘)        |
 | 硬盘（Mac OS）  |         金士顿  SUV400S37120G (120GB固态硬盘)          |
 |  硬盘（Data）   |              希捷 ST1000LM048-2E7172 1TB               |
 |      独显       |               Nvidia GeForce 940M（2GB）               |
