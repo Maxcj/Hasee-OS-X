@@ -1,0 +1,646 @@
+0:100  0:100  MemLog inited, TSC freq: 3000438970
+0:100  0:000  CPU was calibrated with RTC
+0:100  0:000  
+0:100  0:000  Now is 21.7.2018,  6:28:15 (GMT)
+0:100  0:000  Starting Clover revision: 4618 on American Megatrends EFI
+0:100  0:000  Build with: [Args: -mc --no-usb -D NO_GRUB_DRIVERS_EMBEDDED -t XCODE8 | -D DISABLE_USB_SUPPORT -D NO_GRUB_DRIVERS_EMBEDDED --conf=/Users/ricky/src/edk2/Conf -D USE_BIOS_BLOCKIO -D USE_LOW_EBDA -a X64 -b RELEASE -t XCODE8 -n 7 | OS: 10.13.6 | XCODE: 9.4.1]
+0:100  0:000  SelfDevicePath=PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(1,GPT,BC23F058-83DB-4CCF-989D-6CBF1D074B4E,0x800,0xC8000) @700A2F98
+0:100  0:000  SelfDirPath = \EFI\CLOVER
+0:100  0:000  === [ Get Smbios ] ========================================
+0:100  0:000  Type 16 Index = 0
+0:100  0:000  Total Memory Slots Count = 4
+0:100  0:000  Type 17 Index = 0
+0:100  0:000  SmbiosTable.Type17->Speed = 2933MHz
+0:100  0:000  SmbiosTable.Type17->Size = 8192MB
+0:100  0:000  SmbiosTable.Type17->Bank/Device = BANK 0 ChannelA-DIMM0
+0:100  0:000  SmbiosTable.Type17->Vendor = 0616
+0:100  0:000  SmbiosTable.Type17->SerialNumber = 0000000F
+0:100  0:000  SmbiosTable.Type17->PartNumber = avexir              
+0:100  0:000  Type 17 Index = 1
+0:100  0:000  Ignoring insane frequency value 0MHz
+0:100  0:000  SmbiosTable.Type17->Speed = 0MHz
+0:100  0:000  SmbiosTable.Type17->Size = 0MB
+0:100  0:000  SmbiosTable.Type17->Bank/Device = BANK 1 ChannelA-DIMM1
+0:100  0:000  SmbiosTable.Type17->Vendor = <null string>
+0:100  0:000  SmbiosTable.Type17->SerialNumber = <null string>
+0:100  0:000  SmbiosTable.Type17->PartNumber = <null string>
+0:100  0:000  Type 17 Index = 2
+0:100  0:000  SmbiosTable.Type17->Speed = 2933MHz
+0:100  0:000  SmbiosTable.Type17->Size = 8192MB
+0:100  0:000  SmbiosTable.Type17->Bank/Device = BANK 2 ChannelB-DIMM0
+0:100  0:000  SmbiosTable.Type17->Vendor = 0616
+0:100  0:000  SmbiosTable.Type17->SerialNumber = 00000002
+0:100  0:000  SmbiosTable.Type17->PartNumber = avexir              
+0:100  0:000  Type 17 Index = 3
+0:100  0:000  Ignoring insane frequency value 0MHz
+0:100  0:000  SmbiosTable.Type17->Speed = 0MHz
+0:100  0:000  SmbiosTable.Type17->Size = 0MB
+0:100  0:000  SmbiosTable.Type17->Bank/Device = BANK 3 ChannelB-DIMM1
+0:100  0:000  SmbiosTable.Type17->Vendor = <null string>
+0:100  0:000  SmbiosTable.Type17->SerialNumber = <null string>
+0:100  0:000  SmbiosTable.Type17->PartNumber = <null string>
+0:100  0:000  Boot status=0
+0:100  0:000  Running on: 'To Be Filled By O.E.M.' with board 'Z370 Pro4'
+0:100  0:000  === [ GetCPUProperties ] ==================================
+0:100  0:000  CPU Vendor = 756E6547 Model=906EA
+0:100  0:000   The CPU supported SSE4.1
+0:100  0:000  BrandString = Intel(R) Core(TM) i5-8500 CPU @ 3.00GHz
+0:100  0:000   The CPU supported turbo
+0:100  0:000  MSR 0x35               60006
+0:100  0:000   TSC/CCC Information Leaf:
+0:100  0:000    numerator     : 250
+0:100  0:000    denominator   : 2
+0:100  0:000   Calibrated ARTFrequency: 24003511
+0:100  0:000  MSR 0xE2 before patch 1E000000
+0:100  0:000  MSR 0xCE              08080838_F1011E00
+0:100  0:000  corrected FLEX_RATIO = 0
+0:100  0:000  MSR 0x1B0             00000000
+0:100  0:000  FSBFrequency = 100 MHz, DMI FSBFrequency = 100 MHz, Corrected FSBFrequency = 100 MHz
+0:100  0:000  MaxDiv/MinDiv: 30.0/8
+0:100  0:000  Turbo: 40/40/40/41
+0:100  0:000  Features: 0xBFEBFBFF
+0:100  0:000  Threads: 6
+0:100  0:000  Cores: 6
+0:100  0:000  FSB: 100 MHz
+0:100  0:000  CPU: 3000 MHz
+0:100  0:000  TSC: 3000 MHz
+0:100  0:000  PIS: 100 MHz
+0:100  0:000  ExternalClock: 25 MHz
+0:100  0:000  === [ GetDevices ] ========================================
+0:100  0:000  PCI (00|00:00.00) : 8086 3EC2 class=060000
+0:100  0:000  PCI (00|00:01.00) : 8086 1901 class=060400
+0:100  0:000  PCI (00|01:00.00) : 1002 67DF class=030000
+0:100  0:000   - GFX: Model=AMD Radeon RX 480 (ATI/AMD)
+0:100  0:000  PCI (00|01:00.01) : 1002 AAF0 class=040300
+0:100  0:000   - HDMI Audio: 
+0:100  0:000  PCI (00|00:02.00) : 8086 3E92 class=038000
+0:100  0:000   - GFX: Model=Intel UHD Graphics 630 (Intel)
+0:100  0:000  PCI (00|00:14.00) : 8086 A2AF class=0C0330
+0:100  0:000  PCI (00|00:14.02) : 8086 A2B1 class=118000
+0:100  0:000  PCI (00|00:16.00) : 8086 A2BA class=078000
+0:100  0:000  PCI (00|00:17.00) : 8086 A282 class=010601
+0:100  0:000  PCI (00|00:1B.00) : 8086 A2E7 class=060400
+0:100  0:000  PCI (00|00:1B.04) : 8086 A2EB class=060400
+0:100  0:000  PCI (00|03:00.00) : 144D A802 class=010802
+0:100  0:000  PCI (00|00:1C.00) : 8086 A290 class=060400
+0:100  0:000  PCI (00|00:1C.06) : 8086 A296 class=060400
+0:100  0:000  PCI (00|05:00.00) : 1B21 1080 class=060400
+0:100  0:000  PCI (00|00:1C.07) : 8086 A297 class=060400
+0:100  0:000  PCI (00|07:00.00) : 14E4 43A0 class=028000
+0:100  0:000   - WIFI: Vendor=Broadcom
+0:100  0:000  PCI (00|00:1D.00) : 8086 A298 class=060400
+0:100  0:000  PCI (00|00:1F.00) : 8086 A2C9 class=060100
+0:100  0:000  PCI (00|00:1F.02) : 8086 A2A1 class=058000
+0:100  0:000  PCI (00|00:1F.03) : 8086 A2F0 class=040300
+0:100  0:000  PCI (00|00:1F.04) : 8086 A2A3 class=0C0500
+0:100  0:000  PCI (00|00:1F.06) : 8086 15B8 class=020000
+0:100  0:000   - LAN: 0 Vendor=Intel
+0:100  0:000  === [ GetDefaultSettings ] ================================
+0:100  0:000  Clover load options size = 0 bytes
+0:103  0:002  EFI\CLOVER\config.plist loaded: Success
+0:103  0:000  === [ GetListOfThemes ] ===================================
+0:103  0:000  - [00]: AAA
+0:103  0:000  - [01]: black_green
+0:104  0:000  - [02]: El Capitan
+0:105  0:000  - [03]: embedded
+0:105  0:000  - [03]: jobs
+0:105  0:000  - [04]: newyear
+0:106  0:000  - [05]: random
+0:107  0:000  - [05]: Sierra
+0:107  0:000  - [06]: Sierra 2
+0:108  0:000  - [07]: YosemiteLogin
+0:108  0:000  === [ Found config plists ] ===============================
+0:108  0:000  - config.plist
+0:109  0:000  === [ GetEarlyUserSettings ] ==============================
+0:109  0:000  timeout set to 5
+0:109  0:000  Custom boot CUSTOM_BOOT_DISABLED (0x0)
+0:109  0:000  KextsToPatch: 3 requested
+0:109  0:000   - [00]: com.apple.driver.usb.AppleUSBXHCI (change 15 port limit to 26 in XHCI kext for 10.14db1) :: BinPatch :: data len: 9
+0:109  0:000   - patch disabled at config
+0:109  0:000   - [01]: com.apple.iokit.IOAHCIBlockStorage (Enable TRIM for SSD) :: BinPatch :: data len: 11
+0:109  0:000   - [02]: com.apple.driver.usb.AppleUSBXHCI (disable USB Port Limit Patch for 10.13.6 beta4 (PMheart)) :: MatchOS: 10.13.6 :: BinPatch :: data len: 10
+0:109  0:000  KernelToPatch: 1 requested
+0:109  0:000   - [00]: MSR 0xE2 _xcpm_idle instant reboot(c) Pike R. Alpha :: data len: 8
+0:109  0:000  Default theme: AAA
+0:109  0:000  Hiding entries with string Windows
+0:109  0:000  Hiding entries with string BOOTX64.EFI
+0:109  0:000  Hiding entries with string Preboot
+0:109  0:000  Hiding entries with string Recovery HD
+0:109  0:000  Hiding entries with string Recovery
+0:109  0:000  Hiding entries with string 712EB26A-EC82-4AE4-0269-8272EB394D8E
+0:109  0:000  Custom entry boot CUSTOM_BOOT_THEME (0x0)
+0:109  0:000  Custom entry boot CUSTOM_BOOT_THEME (0x0)
+0:109  0:000  Custom entry boot CUSTOM_BOOT_THEME (0x0)
+0:109  0:000  Custom entry boot CUSTOM_BOOT_THEME (0x0)
+0:109  0:000  === [ LoadDrivers ] =======================================
+0:109  0:000  Loading AptioMemoryFix-64.efi  status=Success
+0:110  0:001  Loading FSInject-64.efi  status=Success
+0:111  0:000  Loading HFSPlus.efi  status=Success
+0:111  0:000   - driver needs connecting
+0:111  0:000  Loading NTFS.efi  status=Success
+0:112  0:000   - driver needs connecting
+0:112  0:000  Loading ApfsDriverLoader-64.efi  status=Success
+0:113  0:000   - driver needs connecting
+0:113  0:000  3 drivers needs connecting ...
+0:113  0:000  PlatformDriverOverrideProtocol->GetDriver overriden
+0:113  0:000  HFS+ driver loaded
+0:113  0:000  APFS driver loaded
+0:113  0:000  Searching for invalid DiskIo BY_DRIVER connects: not found, all ok
+0:440  0:326  === [ InitScreen ] ========================================
+0:440  0:000  SetScreenResolution: 3440x1440 - already set
+0:440  0:000  Console modes reported: 4, available modes:
+0:440  0:000   - [01]: 80x25 (current mode)
+0:440  0:000   - [02]: 128x40
+0:440  0:000   - [03]: 100x31
+0:440  0:000   - [04]: 430x75
+0:440  0:000  reinit: self device path=PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(1,GPT,BC23F058-83DB-4CCF-989D-6CBF1D074B4E,0x800,0xC8000)
+0:440  0:000  === [ GetMacAddress ] =====================================
+0:440  0:000   get legacy LAN MAC, 1 card found
+0:440  0:000  Legacy MAC address of LAN #0= 70:85:C2:7B:CC:3A:
+0:440  0:000  === [ ScanSPD ] ===========================================
+0:441  0:000  SMBus device : 8086 A2A3 class=0C0500 status=Success
+0:441  0:000  SMBus CmdReg: 0x3
+0:441  0:000  Scanning SMBus [8086:A2A3], mmio: 0xDF54A004, ioport: 0xF040, hostc: 0x1
+0:441  0:000  Slots to scan [8]...
+0:441  0:000  SPD[0]: Type 12 @0x50
+0:459  0:018  Bad parity bank=0x06 code=0x16
+0:459  0:000  Not using XMP because it is not present
+0:459  0:000  DDR speed 2400MHz
+0:459  0:000  Slot: 0 Type 26 8192MB 2400MHz Vendor=Avexir Technologies PartNo=avexir SerialNo=000000000000000F
+0:460  0:000  SPD[2]: Type 12 @0x52
+0:478  0:018  Bad parity bank=0x06 code=0x16
+0:478  0:000  Not using XMP because it is not present
+0:478  0:000  DDR speed 2400MHz
+0:478  0:000  Slot: 2 Type 26 8192MB 2400MHz Vendor=Avexir Technologies PartNo=avexir SerialNo=0000000000000002
+0:479  0:000  === [ GetAcpiTablesList ] =================================
+0:479  0:000  Get Acpi Tables List from RSDT:
+0:479  0:000   - [00]: FACP  A M I  len=132
+0:479  0:000   - [01]: APIC  A M I  len=160
+0:479  0:000   - [02]: FPDT  A M I  len=68
+0:479  0:000   - [03]: FIDT  A M I len=156
+0:479  0:000   - [04]: MCFG  A M I  len=60
+0:479  0:000   - [05]: SSDT  SataTabl len=931
+0:479  0:000   - [06]: SSDT  SaSsdt  len=12645
+0:479  0:000   - [07]: SSDT  PegSsdt len=9716
+0:479  0:000   - [08]: HPET  KBL len=56
+0:479  0:000   - [09]: SSDT  xh_kbl_s len=2607
+0:479  0:000   - [10]: UEFI  A M I  len=72
+0:479  0:000   - [11]: SSDT  CpuSsdt len=6062
+0:479  0:000   - [12]: AAFT  OEMAAFT  len=542
+0:479  0:000   - [13]: LPIT  KBL len=148
+0:479  0:000   - [14]: SSDT  HdaDsp len=321
+0:479  0:000   - [15]: SSDT  TbtTypeC len=1303
+0:479  0:000   - [16]: SSDT  Wwan len=745
+0:479  0:000   - [17]: DBGP   len=52
+0:479  0:000   - [18]: DBG2   len=84
+0:479  0:000   - [19]: DMAR  EDK2     len=168
+0:479  0:000   - [20]: BGRT  A M I  len=56
+0:479  0:000   - [21]: WSMT  A M I  len=40
+0:479  0:000  Calibrated TSC Frequency = 3000438970 = 3000MHz
+0:479  0:000  === [ GetUserSettings ] ===================================
+0:479  0:000  USB FixOwnership: yes
+0:479  0:000  Dropping 4 tables:
+0:479  0:000   - [00]: Drop table  signature="MCFG" (4746434D)
+0:479  0:000           - set table: 4746434D,                0 to drop: yes
+0:479  0:000   - [01]: Drop table  signature="DMAR" (52414D44)
+0:479  0:000           - set table: 52414D44,                0 to drop: yes
+0:479  0:000   - [02]: Drop table  signature="SSDT" (54445353) table-id="Cpu0Ist" (0074734930757043)
+0:479  0:000           - set table: 54445353,   74734930757043 to drop: no
+0:479  0:000   - [03]: Drop table  signature="SSDT" (54445353) table-id="CpuPm" (0000006D50757043)
+0:479  0:000           - set table: 54445353,       6D50757043 to drop: no
+0:479  0:000   - final DSDT Fix mask=00000000
+0:479  0:000  PatchesDSDT: 5 requested
+0:479  0:000   - [00]: (change HDAS to HDEF) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+0:479  0:000   - [01]: (change SAT0 to SATA) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+0:479  0:000   - [02]: (change HECI to IMEI) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+0:479  0:000   - [03]: (change GFX0 to IGPU) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+0:479  0:000   - [04]: (change PEGP to GFX0) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+0:479  0:000  Using ProductName from config: iMac18,3
+0:479  0:000  Using latest BiosVersion from clover
+0:479  0:000  BiosVersion: IM183.88Z.0161.B00.1806260901
+0:479  0:000  BiosReleaseDate: 06/26/2018
+0:479  0:000  Using FirmwareFeatures from config: 0xFC0FE137
+0:479  0:000  Using FirmwareFeaturesMask from config: 0xFF1FFF3F
+0:479  0:000  Board-ID set from config as Mac-BE088AF8C5EB4FA2
+0:479  0:000  BoardType: 0xA
+0:479  0:000  ChassisType: 0x9
+0:480  0:000  === [ Found DSDT tables ] =================================
+0:480  0:000  - DSDT.aml
+1:273  0:793  === [ ScanVolumes ] =======================================
+1:273  0:000  Found 17 volumes with blockIO
+1:273  0:000  - [00]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)
+1:274  0:000  - [01]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x1,0xFFFF,0x0)
+1:274  0:000          Found optical drive
+1:274  0:000  - [02]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(1,GPT,923D4B14-B639-4E9A-9110-19B0BDD3E5D3,0x800,0xC8000)
+1:275  0:000  - [03]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(2,GPT,9425ECDB-8B30-11E8-A5D9-C4B3019276B9,0x10B000,0x711C38A4)
+1:309  0:034          Result of bootcode detection: bootable Windows (vista,win)
+1:309  0:000  - [04]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(3,GPT,9425EEAA-8B30-11E8-A5D9-C4B3019276B9,0x712CF800,0x700F5495)
+1:324  0:014          Result of bootcode detection: bootable Windows (vista,win)
+1:324  0:000  - [05]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(4,GPT,712EB26A-EC82-4AE4-0269-8272EB394D8E,0xE13C5000,0x73FE000)
+1:343  0:019          hiding this volume
+1:343  0:000  - [06]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(5,GPT,C2708894-5689-463B-0E4E-66E2EFB0D4DC,0xE87C3000,0x135800)
+1:356  0:012          hiding this volume
+1:356  0:000  - [07]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(6,GPT,9425F196-8B30-11E8-A5D9-C4B3019276B9,0xE88F8800,0xDC5FDD3E)
+1:361  0:005          Result of bootcode detection: bootable Windows (vista,win)
+1:361  0:000  - [08]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(7,GPT,B9BEF5D7-E607-412D-AE04-3C829800240C,0x1C4EF6800,0xCD15000)
+1:362  0:000  - [09]: Volume: PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)
+1:362  0:000  - [10]: Volume: PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(1,GPT,BC23F058-83DB-4CCF-989D-6CBF1D074B4E,0x800,0xC8000)
+1:362  0:000          Result of bootcode detection: bootable Windows (win)
+1:363  0:000          This is SelfVolume !!
+1:363  0:000  - [11]: Volume: PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(2,GPT,0B4D40BB-103C-486F-AEF2-02E35ABE2A8C,0xC8800,0x40000)
+1:363  0:000  - [12]: Volume: PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(3,GPT,F8F1A9AB-34B5-11E8-9B09-806E6F6E6963,0x108800,0xA1F7A87)
+1:363  0:000          Result of bootcode detection: bootable Windows (vista,win)
+1:363  0:000          hiding this volume
+1:363  0:000  - [13]: Volume: PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(4,GPT,02C39373-A54D-43DB-9470-29E201C00E25,0xA300800,0x1AC800)
+1:363  0:000          Result of bootcode detection: bootable Windows (vista,win)
+1:363  0:000  - [14]: Volume: PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(5,GPT,B1ECB346-3650-49F3-819A-A1BD572F91BB,0xA4AD000,0xA3D5800)
+1:363  0:000  - [15]: Volume: PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(6,GPT,E63CF80F-1CC1-454C-8D2E-E5DE7ADE1D4B,0x14882800,0x4A37800)
+1:363  0:000  - [16]: Volume: PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(7,GPT,9EC7666C-6694-4A02-9C23-F3B866C50D15,0x192BA000,0x4A39000)
+1:363  0:000  === [ InitTheme ] =========================================
+1:375  0:011  Using theme 'AAA' (EFI\CLOVER\themes\AAA)
+1:375  0:000  OS main and drive as badge
+1:375  0:000  Warning! Character width 21 should be even!
+1:378  0:003  Loading font from ThemeDir: Success
+1:379  0:000  Chosen theme AAA
+1:379  0:000  after NVRAM boot-args=-disablegfxfirmware -lilubetaall dart=0
+1:379  0:000  === [ Dump SMC keys from NVRAM ] ==========================
+1:379  0:000  no AppleSMC protocol
+1:386  0:006  === [ AddCustomEntries ] ==================================
+1:386  0:000  Custom entry 0 FullTitle:"Windows 10" Path:"\EFI\Microsoft\Boot\bootmgfw.efi" Options:"-s -h" Type:7 Flags:0x0 matching all volumes
+1:386  0:000      Checking volume "HelloDisk" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(2,GPT,9425ECDB-8B30-11E8-A5D9-C4B3019276B9,0x10B000,0x711C38A4)) ... skipped because path does not exist
+1:386  0:000      Checking volume "FuckDisk" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(3,GPT,9425EEAA-8B30-11E8-A5D9-C4B3019276B9,0x712CF800,0x700F5495)) ... skipped because path does not exist
+1:386  0:000      Checking volume "mac" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(4,GPT,712EB26A-EC82-4AE4-0269-8272EB394D8E,0xE13C5000,0x73FE000)) ... skipped because volume is hidden
+1:386  0:000      Checking volume "Recovery HD" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(5,GPT,C2708894-5689-463B-0E4E-66E2EFB0D4DC,0xE87C3000,0x135800)) ... skipped because volume is hidden
+1:386  0:000      Checking volume "GiantDisk" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(6,GPT,9425F196-8B30-11E8-A5D9-C4B3019276B9,0xE88F8800,0xDC5FDD3E)) ... skipped because path does not exist
+1:386  0:000      Checking volume "Machintosh Data" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(7,GPT,B9BEF5D7-E607-412D-AE04-3C829800240C,0x1C4EF6800,0xCD15000)) ... skipped because path does not exist
+1:386  0:000      Checking volume "EFI" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(1,GPT,BC23F058-83DB-4CCF-989D-6CBF1D074B4E,0x800,0xC8000)) ... match!
+1:388  0:002  Custom settings: <null string>.plist will  be applied
+1:388  0:000      Checking volume "Windows 10" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(3,GPT,F8F1A9AB-34B5-11E8-9B09-806E6F6E6963,0x108800,0xA1F7A87)) ... skipped because volume is hidden
+1:388  0:000      Checking volume "" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(4,GPT,02C39373-A54D-43DB-9470-29E201C00E25,0xA300800,0x1AC800)) ... skipped because path does not exist
+1:388  0:000      Checking volume "New Volume" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(5,GPT,B1ECB346-3650-49F3-819A-A1BD572F91BB,0xA4AD000,0xA3D5800)) ... skipped because path does not exist
+1:388  0:000  Custom entry 1 FullTitle:"Macintosh HD" Path:"\System\Library\CoreServices\boot.efi" Type:1 Flags:0x2 matching Volume:"B1ECB346-3650-49F3-819A-A1BD572F91BB"
+1:388  0:000      Checking volume "HelloDisk" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(2,GPT,9425ECDB-8B30-11E8-A5D9-C4B3019276B9,0x10B000,0x711C38A4)) ... skipped
+1:388  0:000      Checking volume "FuckDisk" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(3,GPT,9425EEAA-8B30-11E8-A5D9-C4B3019276B9,0x712CF800,0x700F5495)) ... skipped
+1:388  0:000      Checking volume "mac" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(4,GPT,712EB26A-EC82-4AE4-0269-8272EB394D8E,0xE13C5000,0x73FE000)) ... skipped because volume is hidden
+1:388  0:000      Checking volume "Recovery HD" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(5,GPT,C2708894-5689-463B-0E4E-66E2EFB0D4DC,0xE87C3000,0x135800)) ... skipped because volume is hidden
+1:388  0:000      Checking volume "GiantDisk" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(6,GPT,9425F196-8B30-11E8-A5D9-C4B3019276B9,0xE88F8800,0xDC5FDD3E)) ... skipped
+1:388  0:000      Checking volume "Machintosh Data" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(7,GPT,B9BEF5D7-E607-412D-AE04-3C829800240C,0x1C4EF6800,0xCD15000)) ... skipped
+1:388  0:000      Checking volume "EFI" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(1,GPT,BC23F058-83DB-4CCF-989D-6CBF1D074B4E,0x800,0xC8000)) ... skipped
+1:388  0:000      Checking volume "Windows 10" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(3,GPT,F8F1A9AB-34B5-11E8-9B09-806E6F6E6963,0x108800,0xA1F7A87)) ... skipped because volume is hidden
+1:388  0:000      Checking volume "" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(4,GPT,02C39373-A54D-43DB-9470-29E201C00E25,0xA300800,0x1AC800)) ... skipped
+1:388  0:000      Checking volume "New Volume" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(5,GPT,B1ECB346-3650-49F3-819A-A1BD572F91BB,0xA4AD000,0xA3D5800)) ... skipped because path does not exist
+1:388  0:000  Custom entry 2 FullTitle:"Deepin 15.5" Path:"\EFI\ubuntu\grubx64.efi" Type:4 Flags:0x0 matching all volumes
+1:388  0:000      Checking volume "HelloDisk" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(2,GPT,9425ECDB-8B30-11E8-A5D9-C4B3019276B9,0x10B000,0x711C38A4)) ... skipped because path does not exist
+1:388  0:000      Checking volume "FuckDisk" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(3,GPT,9425EEAA-8B30-11E8-A5D9-C4B3019276B9,0x712CF800,0x700F5495)) ... skipped because path does not exist
+1:388  0:000      Checking volume "mac" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(4,GPT,712EB26A-EC82-4AE4-0269-8272EB394D8E,0xE13C5000,0x73FE000)) ... skipped because volume is hidden
+1:388  0:000      Checking volume "Recovery HD" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(5,GPT,C2708894-5689-463B-0E4E-66E2EFB0D4DC,0xE87C3000,0x135800)) ... skipped because volume is hidden
+1:388  0:000      Checking volume "GiantDisk" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(6,GPT,9425F196-8B30-11E8-A5D9-C4B3019276B9,0xE88F8800,0xDC5FDD3E)) ... skipped because path does not exist
+1:388  0:000      Checking volume "Machintosh Data" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(7,GPT,B9BEF5D7-E607-412D-AE04-3C829800240C,0x1C4EF6800,0xCD15000)) ... skipped because path does not exist
+1:388  0:000      Checking volume "EFI" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(1,GPT,BC23F058-83DB-4CCF-989D-6CBF1D074B4E,0x800,0xC8000)) ... match!
+1:389  0:000          [!] Icon 19 (icons\vol_internal_ext3.icns) not found (path: EFI\CLOVER\themes\AAA)
+1:389  0:000  Custom settings: <null string>.plist will  be applied
+1:389  0:000      Checking volume "Windows 10" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(3,GPT,F8F1A9AB-34B5-11E8-9B09-806E6F6E6963,0x108800,0xA1F7A87)) ... skipped because volume is hidden
+1:389  0:000      Checking volume "" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(4,GPT,02C39373-A54D-43DB-9470-29E201C00E25,0xA300800,0x1AC800)) ... skipped because path does not exist
+1:389  0:000      Checking volume "New Volume" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(5,GPT,B1ECB346-3650-49F3-819A-A1BD572F91BB,0xA4AD000,0xA3D5800)) ... skipped because path does not exist
+1:389  0:000  Custom entry 3 FullTitle:"PhoenixOS" Path:"\EFI\boot\grubx64.efi" Type:4 Flags:0x0 matching all volumes
+1:389  0:000      Checking volume "HelloDisk" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(2,GPT,9425ECDB-8B30-11E8-A5D9-C4B3019276B9,0x10B000,0x711C38A4)) ... skipped because path does not exist
+1:389  0:000      Checking volume "FuckDisk" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(3,GPT,9425EEAA-8B30-11E8-A5D9-C4B3019276B9,0x712CF800,0x700F5495)) ... skipped because path does not exist
+1:389  0:000      Checking volume "mac" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(4,GPT,712EB26A-EC82-4AE4-0269-8272EB394D8E,0xE13C5000,0x73FE000)) ... skipped because volume is hidden
+1:389  0:000      Checking volume "Recovery HD" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(5,GPT,C2708894-5689-463B-0E4E-66E2EFB0D4DC,0xE87C3000,0x135800)) ... skipped because volume is hidden
+1:389  0:000      Checking volume "GiantDisk" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(6,GPT,9425F196-8B30-11E8-A5D9-C4B3019276B9,0xE88F8800,0xDC5FDD3E)) ... skipped because path does not exist
+1:389  0:000      Checking volume "Machintosh Data" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(7,GPT,B9BEF5D7-E607-412D-AE04-3C829800240C,0x1C4EF6800,0xCD15000)) ... skipped because path does not exist
+1:389  0:000      Checking volume "EFI" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(1,GPT,BC23F058-83DB-4CCF-989D-6CBF1D074B4E,0x800,0xC8000)) ... match!
+1:390  0:000  Custom settings: <null string>.plist will  be applied
+1:390  0:000      Checking volume "Windows 10" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(3,GPT,F8F1A9AB-34B5-11E8-9B09-806E6F6E6963,0x108800,0xA1F7A87)) ... skipped because volume is hidden
+1:390  0:000      Checking volume "" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(4,GPT,02C39373-A54D-43DB-9470-29E201C00E25,0xA300800,0x1AC800)) ... skipped because path does not exist
+1:390  0:000      Checking volume "New Volume" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(5,GPT,B1ECB346-3650-49F3-819A-A1BD572F91BB,0xA4AD000,0xA3D5800)) ... skipped because path does not exist
+1:390  0:000  === [ ScanLoader ] ========================================
+1:390  0:000  - [03]: 'HelloDisk'
+1:390  0:000  - [04]: 'FuckDisk'
+1:390  0:000  - [05]: 'mac', hidden
+1:390  0:000  - [06]: 'Recovery HD', hidden
+1:390  0:000  - [07]: 'GiantDisk'
+1:390  0:000  - [08]: 'Machintosh Data'
+1:463  0:072          AddLoaderEntry for Volume Name=Machintosh Data
+1:493  0:029      Check if volume Is Hibernated:
+1:493  0:000      Check sleep image 'by signature':
+1:543  0:050      read prefs \Library\Preferences\com.apple.PowerManagement.plist status=Success
+1:543  0:000      using default sleep image name = \private\var\vm\sleepimage
+1:567  0:024      sleepimage not found -> Not Found
+1:567  0:000      hibernated: no - sign
+1:568  0:001          [!] Icon 17 (icons\vol_internal_hfs.icns) not found (path: EFI\CLOVER\themes\AAA)
+1:569  0:000  - [10]: 'EFI'
+1:570  0:000          AddLoaderEntry for Volume Name=EFI
+1:570  0:000       skipped because path `PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(1,GPT,BC23F058-83DB-4CCF-989D-6CBF1D074B4E,0x800,0xC8000)\EFI\microsoft\Boot\bootmgfw.efii` already exists for another entry!
+1:571  0:001          AddLoaderEntry for Volume Name=EFI
+1:571  0:000          skipped because entry is hidden
+1:571  0:000  - [12]: 'Windows 10', hidden
+1:571  0:000  - [13]: ''
+1:571  0:000  - [14]: 'New Volume'
+1:571  0:000  === [ AddCustomTool ] =====================================
+1:572  0:000  found tool \EFI\CLOVER\tools\Shell64U.efi
+1:572  0:000  Checking EFI partition Volume 10 for Clover
+1:572  0:000   Found Clover
+1:574  0:001  === [ GetEfiBootDeviceFromNvram ] =========================
+1:574  0:000   - found entry 0. 'Windows 10', Volume 'EFI', DevicePath 'PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(1,GPT,BC23F058-83DB-4CCF-989D-6CBF1D074B4E,0x800,0xC8000)\EFI\Microsoft\Boot\bootmgfw.efii'
+1:574  0:000  DefaultIndex=0 and MainMenu.EntryCount=10
+3:452  1:877  GUI ready
+5:562  2:110  ReinitSelfLib after theme change
+5:562  0:000  reinit: self device path=PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(1,GPT,BC23F058-83DB-4CCF-989D-6CBF1D074B4E,0x800,0xC8000)
+5:563  0:000  === [ ScanVolumes ] =======================================
+5:563  0:000  Found 17 volumes with blockIO
+5:563  0:000  - [00]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)
+5:563  0:000  - [01]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x1,0xFFFF,0x0)
+5:563  0:000          Found optical drive
+5:563  0:000  - [02]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(1,GPT,923D4B14-B639-4E9A-9110-19B0BDD3E5D3,0x800,0xC8000)
+5:564  0:000  - [03]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(2,GPT,9425ECDB-8B30-11E8-A5D9-C4B3019276B9,0x10B000,0x711C38A4)
+5:575  0:011          Result of bootcode detection: bootable Windows (vista,win)
+5:575  0:000  - [04]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(3,GPT,9425EEAA-8B30-11E8-A5D9-C4B3019276B9,0x712CF800,0x700F5495)
+5:590  0:014          Result of bootcode detection: bootable Windows (vista,win)
+5:590  0:000  - [05]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(4,GPT,712EB26A-EC82-4AE4-0269-8272EB394D8E,0xE13C5000,0x73FE000)
+5:609  0:019  - [06]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(5,GPT,C2708894-5689-463B-0E4E-66E2EFB0D4DC,0xE87C3000,0x135800)
+5:610  0:000  - [07]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(6,GPT,9425F196-8B30-11E8-A5D9-C4B3019276B9,0xE88F8800,0xDC5FDD3E)
+5:616  0:006          Result of bootcode detection: bootable Windows (vista,win)
+5:616  0:000  - [08]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(7,GPT,B9BEF5D7-E607-412D-AE04-3C829800240C,0x1C4EF6800,0xCD15000)
+5:617  0:000  - [09]: Volume: PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)
+5:617  0:000  - [10]: Volume: PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(1,GPT,BC23F058-83DB-4CCF-989D-6CBF1D074B4E,0x800,0xC8000)
+5:617  0:000          Result of bootcode detection: bootable Windows (win)
+5:617  0:000          This is SelfVolume !!
+5:617  0:000  - [11]: Volume: PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(2,GPT,0B4D40BB-103C-486F-AEF2-02E35ABE2A8C,0xC8800,0x40000)
+5:617  0:000  - [12]: Volume: PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(3,GPT,F8F1A9AB-34B5-11E8-9B09-806E6F6E6963,0x108800,0xA1F7A87)
+5:617  0:000          Result of bootcode detection: bootable Windows (vista,win)
+5:617  0:000  - [13]: Volume: PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(4,GPT,02C39373-A54D-43DB-9470-29E201C00E25,0xA300800,0x1AC800)
+5:617  0:000          Result of bootcode detection: bootable Windows (vista,win)
+5:617  0:000  - [14]: Volume: PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(5,GPT,B1ECB346-3650-49F3-819A-A1BD572F91BB,0xA4AD000,0xA3D5800)
+5:618  0:000  - [15]: Volume: PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(6,GPT,E63CF80F-1CC1-454C-8D2E-E5DE7ADE1D4B,0x14882800,0x4A37800)
+5:618  0:000  - [16]: Volume: PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(7,GPT,9EC7666C-6694-4A02-9C23-F3B866C50D15,0x192BA000,0x4A39000)
+5:618  0:000  Chosen theme AAA
+5:618  0:000  after NVRAM boot-args=-disablegfxfirmware -lilubetaall dart=0
+5:618  0:000  === [ AddCustomEntries ] ==================================
+5:618  0:000  Custom entry 0 FullTitle:"Windows 10" Path:"\EFI\Microsoft\Boot\bootmgfw.efi" Options:"-s -h" Type:7 Flags:0x0 matching all volumes
+5:618  0:000      Checking volume "HelloDisk" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(2,GPT,9425ECDB-8B30-11E8-A5D9-C4B3019276B9,0x10B000,0x711C38A4)) ... skipped because path does not exist
+5:618  0:000      Checking volume "FuckDisk" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(3,GPT,9425EEAA-8B30-11E8-A5D9-C4B3019276B9,0x712CF800,0x700F5495)) ... skipped because path does not exist
+5:618  0:000      Checking volume "mac" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(4,GPT,712EB26A-EC82-4AE4-0269-8272EB394D8E,0xE13C5000,0x73FE000)) ... skipped because path does not exist
+5:618  0:000      Checking volume "Recovery HD" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(5,GPT,C2708894-5689-463B-0E4E-66E2EFB0D4DC,0xE87C3000,0x135800)) ... skipped because path does not exist
+5:618  0:000      Checking volume "GiantDisk" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(6,GPT,9425F196-8B30-11E8-A5D9-C4B3019276B9,0xE88F8800,0xDC5FDD3E)) ... skipped because path does not exist
+5:618  0:000      Checking volume "Machintosh Data" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(7,GPT,B9BEF5D7-E607-412D-AE04-3C829800240C,0x1C4EF6800,0xCD15000)) ... skipped because path does not exist
+5:618  0:000      Checking volume "EFI" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(1,GPT,BC23F058-83DB-4CCF-989D-6CBF1D074B4E,0x800,0xC8000)) ... match!
+5:619  0:001  Custom settings: <null string>.plist will  be applied
+5:619  0:000      Checking volume "Windows 10" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(3,GPT,F8F1A9AB-34B5-11E8-9B09-806E6F6E6963,0x108800,0xA1F7A87)) ... skipped because path does not exist
+5:619  0:000      Checking volume "" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(4,GPT,02C39373-A54D-43DB-9470-29E201C00E25,0xA300800,0x1AC800)) ... skipped because path does not exist
+5:619  0:000      Checking volume "New Volume" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(5,GPT,B1ECB346-3650-49F3-819A-A1BD572F91BB,0xA4AD000,0xA3D5800)) ... skipped because path does not exist
+5:619  0:000  Custom entry 1 FullTitle:"Macintosh HD" Path:"\System\Library\CoreServices\boot.efi" Type:1 Flags:0x2 matching Volume:"B1ECB346-3650-49F3-819A-A1BD572F91BB"
+5:619  0:000      Checking volume "HelloDisk" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(2,GPT,9425ECDB-8B30-11E8-A5D9-C4B3019276B9,0x10B000,0x711C38A4)) ... skipped
+5:619  0:000      Checking volume "FuckDisk" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(3,GPT,9425EEAA-8B30-11E8-A5D9-C4B3019276B9,0x712CF800,0x700F5495)) ... skipped
+5:619  0:000      Checking volume "mac" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(4,GPT,712EB26A-EC82-4AE4-0269-8272EB394D8E,0xE13C5000,0x73FE000)) ... skipped
+5:619  0:000      Checking volume "Recovery HD" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(5,GPT,C2708894-5689-463B-0E4E-66E2EFB0D4DC,0xE87C3000,0x135800)) ... skipped
+5:619  0:000      Checking volume "GiantDisk" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(6,GPT,9425F196-8B30-11E8-A5D9-C4B3019276B9,0xE88F8800,0xDC5FDD3E)) ... skipped
+5:619  0:000      Checking volume "Machintosh Data" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(7,GPT,B9BEF5D7-E607-412D-AE04-3C829800240C,0x1C4EF6800,0xCD15000)) ... skipped
+5:619  0:000      Checking volume "EFI" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(1,GPT,BC23F058-83DB-4CCF-989D-6CBF1D074B4E,0x800,0xC8000)) ... skipped
+5:619  0:000      Checking volume "Windows 10" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(3,GPT,F8F1A9AB-34B5-11E8-9B09-806E6F6E6963,0x108800,0xA1F7A87)) ... skipped
+5:619  0:000      Checking volume "" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(4,GPT,02C39373-A54D-43DB-9470-29E201C00E25,0xA300800,0x1AC800)) ... skipped
+5:619  0:000      Checking volume "New Volume" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(5,GPT,B1ECB346-3650-49F3-819A-A1BD572F91BB,0xA4AD000,0xA3D5800)) ... skipped because path does not exist
+5:619  0:000  Custom entry 2 FullTitle:"Deepin 15.5" Path:"\EFI\ubuntu\grubx64.efi" Type:4 Flags:0x0 matching all volumes
+5:619  0:000      Checking volume "HelloDisk" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(2,GPT,9425ECDB-8B30-11E8-A5D9-C4B3019276B9,0x10B000,0x711C38A4)) ... skipped because path does not exist
+5:619  0:000      Checking volume "FuckDisk" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(3,GPT,9425EEAA-8B30-11E8-A5D9-C4B3019276B9,0x712CF800,0x700F5495)) ... skipped because path does not exist
+5:619  0:000      Checking volume "mac" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(4,GPT,712EB26A-EC82-4AE4-0269-8272EB394D8E,0xE13C5000,0x73FE000)) ... skipped because path does not exist
+5:619  0:000      Checking volume "Recovery HD" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(5,GPT,C2708894-5689-463B-0E4E-66E2EFB0D4DC,0xE87C3000,0x135800)) ... skipped because path does not exist
+5:619  0:000      Checking volume "GiantDisk" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(6,GPT,9425F196-8B30-11E8-A5D9-C4B3019276B9,0xE88F8800,0xDC5FDD3E)) ... skipped because path does not exist
+5:619  0:000      Checking volume "Machintosh Data" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(7,GPT,B9BEF5D7-E607-412D-AE04-3C829800240C,0x1C4EF6800,0xCD15000)) ... skipped because path does not exist
+5:619  0:000      Checking volume "EFI" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(1,GPT,BC23F058-83DB-4CCF-989D-6CBF1D074B4E,0x800,0xC8000)) ... match!
+5:620  0:000  Custom settings: <null string>.plist will  be applied
+5:620  0:000      Checking volume "Windows 10" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(3,GPT,F8F1A9AB-34B5-11E8-9B09-806E6F6E6963,0x108800,0xA1F7A87)) ... skipped because path does not exist
+5:620  0:000      Checking volume "" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(4,GPT,02C39373-A54D-43DB-9470-29E201C00E25,0xA300800,0x1AC800)) ... skipped because path does not exist
+5:620  0:000      Checking volume "New Volume" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(5,GPT,B1ECB346-3650-49F3-819A-A1BD572F91BB,0xA4AD000,0xA3D5800)) ... skipped because path does not exist
+5:620  0:000  Custom entry 3 FullTitle:"PhoenixOS" Path:"\EFI\boot\grubx64.efi" Type:4 Flags:0x0 matching all volumes
+5:620  0:000      Checking volume "HelloDisk" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(2,GPT,9425ECDB-8B30-11E8-A5D9-C4B3019276B9,0x10B000,0x711C38A4)) ... skipped because path does not exist
+5:620  0:000      Checking volume "FuckDisk" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(3,GPT,9425EEAA-8B30-11E8-A5D9-C4B3019276B9,0x712CF800,0x700F5495)) ... skipped because path does not exist
+5:620  0:000      Checking volume "mac" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(4,GPT,712EB26A-EC82-4AE4-0269-8272EB394D8E,0xE13C5000,0x73FE000)) ... skipped because path does not exist
+5:620  0:000      Checking volume "Recovery HD" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(5,GPT,C2708894-5689-463B-0E4E-66E2EFB0D4DC,0xE87C3000,0x135800)) ... skipped because path does not exist
+5:620  0:000      Checking volume "GiantDisk" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(6,GPT,9425F196-8B30-11E8-A5D9-C4B3019276B9,0xE88F8800,0xDC5FDD3E)) ... skipped because path does not exist
+5:620  0:000      Checking volume "Machintosh Data" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(7,GPT,B9BEF5D7-E607-412D-AE04-3C829800240C,0x1C4EF6800,0xCD15000)) ... skipped because path does not exist
+5:620  0:000      Checking volume "EFI" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(1,GPT,BC23F058-83DB-4CCF-989D-6CBF1D074B4E,0x800,0xC8000)) ... match!
+5:621  0:000  Custom settings: <null string>.plist will  be applied
+5:621  0:000      Checking volume "Windows 10" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(3,GPT,F8F1A9AB-34B5-11E8-9B09-806E6F6E6963,0x108800,0xA1F7A87)) ... skipped because path does not exist
+5:621  0:000      Checking volume "" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(4,GPT,02C39373-A54D-43DB-9470-29E201C00E25,0xA300800,0x1AC800)) ... skipped because path does not exist
+5:621  0:000      Checking volume "New Volume" (PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(5,GPT,B1ECB346-3650-49F3-819A-A1BD572F91BB,0xA4AD000,0xA3D5800)) ... skipped because path does not exist
+5:621  0:000  === [ ScanLoader ] ========================================
+5:621  0:000  - [03]: 'HelloDisk'
+5:621  0:000  - [04]: 'FuckDisk'
+5:621  0:000  - [05]: 'mac'
+5:669  0:047          AddLoaderEntry for Volume Name=mac
+5:686  0:017      Check if volume Is Hibernated:
+5:686  0:000      Check sleep image 'by signature':
+5:719  0:033      read prefs \Library\Preferences\com.apple.PowerManagement.plist status=Success
+5:719  0:000      using default sleep image name = \private\var\vm\sleepimage
+5:735  0:016      sleepimage not found -> Not Found
+5:735  0:000      hibernated: no - sign
+5:737  0:001  - [06]: 'Recovery HD'
+5:738  0:000          AddLoaderEntry for Volume Name=Recovery HD
+5:754  0:016  - [07]: 'GiantDisk'
+5:754  0:000  - [08]: 'Machintosh Data'
+5:755  0:001          AddLoaderEntry for Volume Name=Machintosh Data
+5:756  0:000      Check if volume Is Hibernated:
+5:756  0:000      Check sleep image 'by signature':
+5:756  0:000      read prefs \Library\Preferences\com.apple.PowerManagement.plist status=Success
+5:756  0:000      using default sleep image name = \private\var\vm\sleepimage
+5:756  0:000      sleepimage not found -> Not Found
+5:756  0:000      hibernated: no - sign
+5:758  0:001  - [10]: 'EFI'
+5:758  0:000          AddLoaderEntry for Volume Name=EFI
+5:758  0:000       skipped because path `PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(1,GPT,BC23F058-83DB-4CCF-989D-6CBF1D074B4E,0x800,0xC8000)\EFI\microsoft\Boot\bootmgfw.efii` already exists for another entry!
+5:760  0:001          AddLoaderEntry for Volume Name=EFI
+5:761  0:001  - [12]: 'Windows 10'
+5:761  0:000  - [13]: ''
+5:761  0:000  - [14]: 'New Volume'
+5:761  0:000  === [ AddCustomTool ] =====================================
+5:762  0:000  found tool \EFI\CLOVER\tools\Shell64U.efi
+5:762  0:000  Checking EFI partition Volume 10 for Clover
+5:762  0:000   Found Clover
+5:762  0:000  === [ GetEfiBootDeviceFromNvram ] =========================
+5:762  0:000   - found entry 0. 'Windows 10', Volume 'EFI', DevicePath 'PciRoot(0x0)\Pci(0x1B,0x4)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(1,GPT,BC23F058-83DB-4CCF-989D-6CBF1D074B4E,0x800,0xC8000)\EFI\Microsoft\Boot\bootmgfw.efii'
+5:762  0:000  DefaultIndex=0 and MainMenu.EntryCount=13
+13:397  7:634   boot with args: -disablegfxfirmware -lilubetaall dart=0 -v 
+13:397  0:000  BootVariable of the entry is empty
+13:397  0:000  === [ StartLoader ] =======================================
+13:397  0:000  Finally: ExternalClock=26MHz BusSpeed=100015kHz CPUFreq=3000MHz PIS: hw.busfrequency=104000000Hz
+13:397  0:000  Loading boot.efi  status=Success
+13:638  0:241  GetOSVersion: 10.13.6 (17G65)
+13:638  0:000  CSR_CFG: CSR_ALLOW_UNTRUSTED_KEXTS | CSR_ALLOW_UNRESTRICTED_FS | CSR_ALLOW_TASK_FOR_PID | CSR_ALLOW_UNRESTRICTED_DTRACE | CSR_ALLOW_UNRESTRICTED_NVRAM
+13:638  0:000  Filtering KextPatches:
+13:638  0:000   - [00]: com.apple.driver.usb.AppleUSBXHCI (change 15 port limit to 26 in XHCI kext for 10.14db1) :: BinPatch :: [OS: 10.13.6 | MatchOS: All | MatchBuild: All] ==> disabled by user
+13:638  0:000   - [01]: com.apple.iokit.IOAHCIBlockStorage (Enable TRIM for SSD) :: BinPatch :: [OS: 10.13.6 | MatchOS: All | MatchBuild: All] ==> allowed
+13:638  0:000   - [02]: com.apple.driver.usb.AppleUSBXHCI (disable USB Port Limit Patch for 10.13.6 beta4 (PMheart)) :: BinPatch :: [OS: 10.13.6 | MatchOS: 10.13.6 | MatchBuild: All] ==> allowed
+13:638  0:000  Filtering KernelPatches:
+13:638  0:000   - [00]: MSR 0xE2 _xcpm_idle instant reboot(c) Pike R. Alpha :: [OS: 10.13.6 | MatchOS: All | MatchBuild: no] ==> disabled by user
+13:638  0:000  Will not patch boot.efi
+13:638  0:000  === [ PatchSmbios ] =======================================
+13:638  0:000  insert table 9 for dev 0:0
+13:638  0:000  insert table 9 for dev 0:1
+13:638  0:000  insert table 9 for dev 1F:6
+13:638  0:000  insert table 9 for dev 0:0
+13:639  0:000  Trusting SMBIOS...
+13:639  0:000  Channels: 2
+13:639  0:000  Interleave: 0 2 1 3 4 6 5 7 8 10 9 11 12 14 13 15 16 18 17 19 20 22 21 23
+13:639  0:000   partNum=avexir              
+13:639  0:000  SMBIOS Type 17 Index = 0 => 0 0:
+13:639  0:000  BANK 0 DIMM0 2933MHz 8192MB
+13:639  0:000   partNum=avexir              
+13:639  0:000  SMBIOS Type 17 Index = 1 => 2 2:
+13:639  0:000  BANK 1 DIMM0 2933MHz 8192MB
+13:639  0:000  SMBIOS Type 17 Index = 2 => 1 1:
+13:639  0:000  BANK 0 DIMM1 EMPTY
+13:639  0:000  SMBIOS Type 17 Index = 3 => 3 3:
+13:639  0:000  BANK 1 DIMM1 EMPTY
+13:639  0:000  mTotalSystemMemory = 16384
+13:639  0:000  NumberOfMemoryDevices = 4
+13:639  0:000  Type20[0]->End = 0x7FFFFF, Type17[0] = 0x2000
+13:639  0:000  Type20[1]->End = 0xFFFFFF, Type17[1] = 0x6000
+13:639  0:000  Table 131 is present, CPUType=35
+13:639  0:000  Change to: 605
+13:639  0:000  === [ PatchACPI ] =========================================
+13:639  0:000  Xsdt reallocation done
+13:639  0:000  old FADT length=114
+13:639  0:000   SignatureFixup: 0x90B708B1 -> 0x0
+13:640  0:000  DSDT found in Clover volume OEM folder: EFI\CLOVER\ACPI\patched\DSDT.aml
+13:640  0:000  Apply DsdtFixMask=0x00000000
+13:640  0:000     drop _DSM mask=0xFFFF
+13:640  0:000  === [ FixBiosDsdt ] =======================================
+13:640  0:000  VideoCard devID=0x67DF1002
+13:640  0:000  DisplayADR1[0] = 0x10000, DisplayADR2[0] = 0x0
+13:640  0:000  USBADR[0] = 0x140000 and PCIe = 0xFFFE
+13:640  0:000  Found Airport BCM at 0x1C0007, 0x0
+13:641  0:000  Audio HDA (addr:0x1F0003) setting specified layout-id=1 (0x1)
+13:641  0:000  Patching DSDT:
+13:641  0:000   - [change HDAS to HDEF]: pattern 48444153, bin not found / already patched!
+13:641  0:000   - [change SAT0 to SATA]: pattern 53415430, bin not found / already patched!
+13:641  0:000   - [change HECI to IMEI]: pattern 48454349, bin not found / already patched!
+13:641  0:000   - [change GFX0 to IGPU]: pattern 47465830, bin not found / already patched!
+13:641  0:000   - [change PEGP to GFX0]: pattern 50454750, patched at: [ (3A9) (2C) (2C) (3CA7) (31) (31) (119A3) ]
+13:642  0:000    0 replacements
+13:642  0:000  first CPU found at A51C offset A51F
+13:642  0:000  score candidate at A518
+13:642  0:000  score inserted in acpi_cpu_score _PR_
+13:642  0:000  Found ACPI CPU: PR00 | PR01 | PR02 | PR03 | PR04 | PR05 | PR06 | PR07 | PR08 | PR09 | PR10 | PR11 | PR12 | PR13 | PR14 | PR15 , within the score: _PR_
+13:642  0:000  PreCleanup XSDT: count=22, length=212
+13:642  0:000  PreCleanup XSDT, corrected XSDT: count=22, length=212
+13:642  0:000  === [ ACPIDropTables ] ====================================
+13:642  0:000  Drop tables from XSDT, SIGN=DMAR TableID=EDK2     Length=168
+13:642  0:000   Table[19]: DMAR  EDK2      168 dropped
+13:642  0:000  Drop tables from XSDT, SIGN=MCFG TableID=A M I  Length=60
+13:642  0:000   Table[4]: MCFG  A M I   60 dropped
+13:642  0:000  0. [change HDAS to HDEF]: pattern 48444153, bin not found / already patched!
+13:642  0:000  1. [change SAT0 to SATA]: pattern 53415430, patched at: [ (27) (E) (12) (12) (12) (12) (12) (AB) ]
+13:642  0:000  2. [change HECI to IMEI]: pattern 48454349, bin not found / already patched!
+13:642  0:000  3. [change GFX0 to IGPU]: pattern 47465830, bin not found / already patched!
+13:642  0:000  4. [change PEGP to GFX0]: pattern 50454750, bin not found / already patched!
+13:642  0:000    0 replacements
+13:642  0:000  0. [change HDAS to HDEF]: pattern 48444153, bin not found / already patched!
+13:642  0:000  1. [change SAT0 to SATA]: pattern 53415430, bin not found / already patched!
+13:642  0:000  2. [change HECI to IMEI]: pattern 48454349, bin not found / already patched!
+13:642  0:000  3. [change GFX0 to IGPU]: pattern 47465830, patched at: [ (2D) (E) (46) (2BE) (1C8A) (A3A) (1D) (6EC) ]
+13:642  0:000  4. [change PEGP to GFX0]: pattern 50454750, bin not found / already patched!
+13:642  0:000    0 replacements
+13:642  0:000  Found OperationRegion(SANV, SystemMemory, 76476418, ...)
+13:643  0:000  0. [change HDAS to HDEF]: pattern 48444153, bin not found / already patched!
+13:643  0:000  1. [change SAT0 to SATA]: pattern 53415430, bin not found / already patched!
+13:643  0:000  2. [change HECI to IMEI]: pattern 48454349, bin not found / already patched!
+13:643  0:000  3. [change GFX0 to IGPU]: pattern 47465830, bin not found / already patched!
+13:643  0:000  4. [change PEGP to GFX0]: pattern 50454750, patched at: [ (26B) (24) (24) (3DE) (13) (2BD) (13) (2B7) (13) ]
+13:643  0:000    0 replacements
+13:643  0:000  0. [change HDAS to HDEF]: pattern 48444153, bin not found / already patched!
+13:643  0:000  1. [change SAT0 to SATA]: pattern 53415430, bin not found / already patched!
+13:643  0:000  2. [change HECI to IMEI]: pattern 48454349, bin not found / already patched!
+13:643  0:000  3. [change GFX0 to IGPU]: pattern 47465830, bin not found / already patched!
+13:643  0:000  4. [change PEGP to GFX0]: pattern 50454750, bin not found / already patched!
+13:643  0:000    0 replacements
+13:643  0:000  0. [change HDAS to HDEF]: pattern 48444153, bin not found / already patched!
+13:643  0:000  1. [change SAT0 to SATA]: pattern 53415430, bin not found / already patched!
+13:643  0:000  2. [change HECI to IMEI]: pattern 48454349, bin not found / already patched!
+13:643  0:000  3. [change GFX0 to IGPU]: pattern 47465830, bin not found / already patched!
+13:643  0:000  4. [change PEGP to GFX0]: pattern 50454750, bin not found / already patched!
+13:643  0:000    0 replacements
+13:643  0:000  Found OperationRegion(PNVS, SystemMemory, 6D1D0000, ...)
+13:643  0:000  0. [change HDAS to HDEF]: pattern 48444153, patched at: [ (20) (48) ]
+13:643  0:000  1. [change SAT0 to SATA]: pattern 53415430, bin not found / already patched!
+13:643  0:000  2. [change HECI to IMEI]: pattern 48454349, bin not found / already patched!
+13:643  0:000  3. [change GFX0 to IGPU]: pattern 47465830, bin not found / already patched!
+13:643  0:000  4. [change PEGP to GFX0]: pattern 50454750, bin not found / already patched!
+13:643  0:000    0 replacements
+13:643  0:000  0. [change HDAS to HDEF]: pattern 48444153, bin not found / already patched!
+13:643  0:000  1. [change SAT0 to SATA]: pattern 53415430, bin not found / already patched!
+13:643  0:000  2. [change HECI to IMEI]: pattern 48454349, bin not found / already patched!
+13:643  0:000  3. [change GFX0 to IGPU]: pattern 47465830, bin not found / already patched!
+13:643  0:000  4. [change PEGP to GFX0]: pattern 50454750, bin not found / already patched!
+13:643  0:000    0 replacements
+13:643  0:000  0. [change HDAS to HDEF]: pattern 48444153, bin not found / already patched!
+13:643  0:000  1. [change SAT0 to SATA]: pattern 53415430, bin not found / already patched!
+13:643  0:000  2. [change HECI to IMEI]: pattern 48454349, bin not found / already patched!
+13:643  0:000  3. [change GFX0 to IGPU]: pattern 47465830, bin not found / already patched!
+13:643  0:000  4. [change PEGP to GFX0]: pattern 50454750, bin not found / already patched!
+13:643  0:000    0 replacements
+13:643  0:000  === [ ACPIPatchedAML ] ====================================
+13:643  0:000  Unsorted
+13:643  0:000  Inserting SSDT-XWAK.aml from EFI\CLOVER\ACPI\patched: size=78 ... Success
+13:643  0:000  Inserting SSDT-SMBUS.aml from EFI\CLOVER\ACPI\patched: size=138 ... Success
+13:643  0:000  Inserting SSDT-PluginType1.aml from EFI\CLOVER\ACPI\patched: size=97 ... Success
+13:643  0:000  Inserting SSDT-Config.aml from EFI\CLOVER\ACPI\patched: size=855 ... Success
+13:644  0:000  Inserting SSDT-XHC.aml from EFI\CLOVER\ACPI\patched: size=384 ... Success
+13:644  0:000  Inserting SSDT-SATA.aml from EFI\CLOVER\ACPI\patched: size=295 ... Success
+13:644  0:000  CPUBase=0 and ApicCPUBase=1 ApicCPUNum=1
+13:644  0:000  Maximum control=0x1E
+13:644  0:000  Turbo control=0x29
+13:644  0:000  P-States: min 0x8, max 0x29
+13:644  0:000  SSDT with plugin-type without P-States is generated
+13:644  0:000  Cleanup XSDT: count=29, length=268
+13:644  0:000  corrected XSDT count=27, length=252
+13:644  0:000  === [ RestSetup macOS ] ===================================
+13:644  0:000  EdidDiscovered size=128
+13:644  0:000  --- Discovered EDID Table size:128
+13:644  0:000  000  |  00  FF  FF  FF  FF  FF  FF  00  21  63
+13:644  0:000  010  |  00  00  01  00  00  00  27  1A  01  04
+13:644  0:000  020  |  A5  50  21  78  33  87  E5  A4  56  50
+13:644  0:000  030  |  9E  26  0D  50  54  21  08  00  D1  C0
+13:644  0:000  040  |  D1  E8  81  80  81  A8  95  00  95  28
+13:644  0:000  050  |  B3  28  B3  00  F5  7C  70  A0  D0  A0
+13:644  0:000  060  |  29  50  30  20  35  00  1D  4D  31  00
+13:644  0:000  070  |  00  1A  43  D0  70  A0  D0  A0  29  50
+13:644  0:000  080  |  30  20  35  00  1D  4D  31  00  00  1A
+13:644  0:000  090  |  00  00  00  FD  00  1E  70  A2  A2  02
+13:644  0:000  100  |  01  0A  20  20  20  20  20  20  00  00
+13:644  0:000  110  |  00  FF  00  43  46  54  42  39  31  39
+13:644  0:000  120  |  32  30  30  33  39  34  01  58
+13:644  0:000  ATI injection not set
+13:644  0:000  Intel UHD Graphics 630 [8086:3E92] :: PciRoot(0x0)\Pci(0x2,0x0)
+13:644  0:000    Found Unknown Resolution Display - ?:? :: Width=3440 Height=1440
+13:644  0:000    Beginning DualLink auto-detection
+13:644  0:000    Unknown Resolution Display
+13:644  0:000    AAPL00,DualLink = 1
+13:644  0:000    FakeID Intel GFX = 0x59128086
+13:644  0:000    ig-platform-id = 0x59120003
+13:644  0:000  Intel GFX revision  = 0x0
+13:644  0:000   RCBA disabled; cannot use it
+13:644  0:000   setting specified layout-id=1 (0x1)
+13:644  0:000  stringlength = 1736
+13:645  0:000  CurrentMode: Width=3440 Height=1440
+13:645  0:000  Beginning FSInjection
+FSInjectionInstall ...
+- Our FSI_SIMPLE_FILE_SYSTEM_PROTOCOL installed on handle: 701B8B98
+FSInjectionInstall ...
+- Our FSI_SIMPLE_FILE_SYSTEM_PROTOCOL installed on handle: 701B8B98
+13:650  0:005  Use origin smbios table type 1 guid.
+13:653  0:002  Preparing kexts injection for arch=x86_64 from EFI\CLOVER\kexts\Other
+13:653  0:000  Extra kext: EFI\CLOVER\kexts\Other\WhateverGreen.kext (v.1.1.8)
+13:663  0:010  Extra kext: EFI\CLOVER\kexts\Other\Lilu.kext (v.1.2.5)
+13:673  0:009  Extra kext: EFI\CLOVER\kexts\Other\XHCI-300-series-injector.kext (v.0.5.0)
+13:676  0:003  Extra kext: EFI\CLOVER\kexts\Other\USBInjectAll.kext (v.0.6.5)
+14:101  0:424  Extra kext: EFI\CLOVER\kexts\Other\LPCSensors.kext (v.1440)
+14:304  0:202  Extra kext: EFI\CLOVER\kexts\Other\IntelMausiEthernet.kext (v.2.4.0)
+14:313  0:009  Extra kext: EFI\CLOVER\kexts\Other\GPUSensors.kext (v.1440)
+14:328  0:015  Extra kext: EFI\CLOVER\kexts\Other\FakeSMC.kext (v.1440)
+14:347  0:019  Extra kext: EFI\CLOVER\kexts\Other\CPUSensors.kext (v.1440)
+14:358  0:010  Extra kext: EFI\CLOVER\kexts\Other\AppleALC.kext (v.1.3.0)
+14:893  0:534  Extra kext: EFI\CLOVER\kexts\Other\ACPISensors.kext (v.1440)
+14:920  0:027  Preparing kexts injection for arch=x86_64 from EFI\CLOVER\kexts\10.13
+14:922  0:001  Custom boot screen not used because entry has unset use graphics
+14:923  0:001  Closing log
