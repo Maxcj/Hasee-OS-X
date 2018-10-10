@@ -1,0 +1,345 @@
+{\rtf1\ansi\ansicpg936\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset134 PingFangSC-Regular;\f2\fnil\fcharset0 Monaco;
+}
+{\colortbl;\red255\green255\blue255;\red52\green52\blue52;\red245\green245\blue245;}
+{\*\expandedcolortbl;;\cssrgb\c26667\c26667\c26667;\cssrgb\c96863\c96863\c96863;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 OperationRegion (ERAM, EmbeddedControl, Zero, 0xFF)\
+                    Field (ERAM, ByteAcc, NoLock, Preserve)\
+                    \{\
+                        Offset (0x40), \
+                        SW2S,   1, \
+                            ,   3, \
+                        WINV,   1, \
+                        Offset (0x41), \
+                        WIN7,   1, \
+                            ,   3, \
+                        TRPM,   1, \
+                            ,   1, \
+                            ,   1, \
+                        Offset (0x42), \
+                            ,   2, \
+                        CBLG,   1, \
+                            ,   2, \
+                        KMOD,   1, \
+                            ,   1, \
+                        AVCF,   1, \
+                        BBDA,   1, \
+                        CIRB,   1, \
+                            ,   2, \
+                        DGPW,   1, \
+                            ,   1, \
+                        NQLB,   1, \
+                        Offset (0x44), \
+                        NICL,   1, \
+                        NICD,   1, \
+                        Offset (0x45), \
+                            ,   2, \
+                        NUCR,   1, \
+                            ,   4, \
+                        WIN8,   1, \
+                        Offset (0x47), \
+                        CPTJ,   8, \
+                        Offset (0x52), \
+                        ECLS,   1, \
+                        WBSS,   1, \
+                            ,   1, \
+                        PRDS,   1, \
+                        Offset (0x56), \
+                        BTLW,   8, \
+                        Offset (0x58), \
+                        RTMP,   8, \
+                        ECT1,   8, \
+                        ECT2,   8, \
+                        RG5B,   8, \
+                        FSPD,   16,      //
+\f1 \'ce\'de
+\f0 \
+                        Offset (0x5F), \
+                        Offset (0x66), \
+                        ACBR,   8, \
+                        RWFG,   2, \
+                        ENTP,   1, \
+                            ,   1, \
+                        MUTA,   1, \
+                        LOSD,   1, \
+                        MUTS,   1, \
+                        Offset (0x68), \
+                        VOVA,   8, \
+                        Offset (0x6B), \
+                        DCBR,   8, \
+                        Offset (0x6D), \
+                            ,   4, \
+                        BLEX,   1, \
+                        Offset (0x6E), \
+                        SMDB,   1, \
+                        LDST,   1, \
+                            ,   5, \
+                        INST,   1, \
+                        Offset (0x70), \
+                        DSCP,   16, \
+//\
+into device label EC0 code_regex DSCP,\\s+16, replace_matched begin DSC0,8, DSC1,8, end;\
+\
+\
+\
+^^PCI0.LPCB.EC0.DSCP\
+//\
+B1B2(^^PCI0.LPCB.EC0.DSC0,^^PCI0.LPCB.EC0.DSC1)\
+\
+\
+\
+\
+                        LACP,   16, \
+//\
+into device label EC0 code_regex LACP,\\s+16, replace_matched begin LAC0,8, LAC1,8, end;\
+\
+\
+\
+^^PCI0.LPCB.EC0.LACP\
+//\
+B1B2(^^PCI0.LPCB.EC0.LAC0,^^PCI0.LPCB.EC0.LAC1)\
+\
+\
+\
+                        DSVG,   16, \
+//\
+into device label EC0 code_regex DSVG,\\s+16, replace_matched begin DSV0,8, DSV1,8, end;\
+\
+\
+\
+^^PCI0.LPCB.EC0.DSVG\
+//\
+B1B2(^^PCI0.LPCB.EC0.DSV0,^^PCI0.LPCB.EC0.DSV1)\
+\
+\
+\
+                        Offset (0x77), \
+                        ECTH,   8, \
+                        ECTL,   8, \
+                        GWPR,   8, \
+                        SCTE,   1, \
+                        WLNP,   1, \
+                        Offset (0x82), \
+                        MBST,   8, \
+                        MCUR,   16, \
+//\
+into device label EC0 code_regex MCUR,\\s+16, replace_matched begin MCU0,8, MCU1,8, end;\
+\
+\
+^^PCI0.LPCB.EC0.MCUR\
+//\
+B1B2(^^PCI0.LPCB.EC0.MCU0,^^PCI0.LPCB.EC0.MCU1)\
+\
+\
+                        MBRM,   16, \
+//\
+into device label EC0 code_regex MBRM,\\s+16, replace_matched begin MBR0,8, MBR1,8, end;\
+\
+\
+^^PCI0.LPCB.EC0.MBRM\
+//
+\f1 \'b6\'c1
+\f0 \
+B1B2(^^PCI0.LPCB.EC0.MBR0,^^PCI0.LPCB.EC0.MBR1)\
+\
+\
+\
+\
+\
+                        MBCV,   16, \
+//\
+into device label EC0 code_regex MBCV,\\s+16, replace_matched begin MBC0,8, MBC1,8, end;\
+\
+\
+^^PCI0.LPCB.EC0.MBCV\
+//\
+B1B2(^^PCI0.LPCB.EC0.MBC0,^^PCI0.LPCB.EC0.MBC1)\
+\
+\
+                        Offset (0xA0), \
+                        QBHK,   8, \
+                        APIN,   1, \
+                            ,   4, \
+                        EC6I,   1, \
+                        EC6O,   1, \
+                        FBST,   1, \
+                        WHOK,   8, \
+                        CBSC,   8, \
+                        MBTS,   1, \
+                        MBTF,   1, \
+                            ,   5, \
+                        S3CF,   1, \
+                        MBTC,   1, \
+                            ,   2, \
+                        MBNH,   1, \
+                        Offset (0xA6), \
+                        BA1C,   8, \
+                            ,   2, \
+                        BERR,   1, \
+                        FPRP,   1, \
+                            ,   3, \
+                        TDEN,   1, \
+                        Offset (0xAA), \
+                        ADIM,   1, \
+                        Offset (0xAF), \
+                        MCER,   8, \
+                        Offset (0xB2), \
+                        RPM1,   8, \
+                        RPM2,   8, \
+                        Offset (0xB8), \
+                        UCS0,   1, \
+                        UCS3,   1, \
+                        UCS5,   1, \
+                        UCSP,   1, \
+                        GP12,   1, \
+                        Offset (0xB9), \
+                        CBLW,   8, \
+                        CLOW,   4, \
+                        Offset (0xBB), \
+                        CMAX,   4, \
+                        Offset (0xBC), \
+                        MCEA,   8, \
+                        Offset (0xC0), \
+                            ,   5, \
+                        IDCU,   1, \
+                        Offset (0xC2), \
+                        TMOD,   8, \
+                            ,   3, \
+                        ACFN,   1, \
+                        DCFN,   1, \
+                        HDMI,   1, \
+                        NTEC,   1, \
+                        Offset (0xC4), \
+                        RFBT,   2, \
+                        CBEN,   1, \
+                        SWER,   1, \
+                            ,   2, \
+                        FNEN,   1, \
+                        SLMO,   1, \
+                        Offset (0xC6), \
+                        FMOD,   8, \
+                        Offset (0xC8), \
+                        BOID,   8, \
+                        WMOD,   8, \
+                        Offset (0xCF), \
+                        DLYC,   8, \
+                        EBPL,   1, \
+                        Offset (0xD2), \
+                        BANA,   64, \
+//\
+\
+^^PCI0.LPCB.EC0.BANA\
+//
+\f1 \'b6\'c1
+\f0 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2 \cf2 \cb3 \expnd0\expndtw0\kerning0
+^^PCI0.LPCB.EC0.RECB(0xD2, 64)
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+//
+\f1 \'d0\'b4   1080\'d0\'d0    Store (Zero, ^^PCI0.LPCB.EC0.BANA)
+\f0 \
+WECB(0xD2,64, Zero)\
+\
+\
+\
+                        Offset (0xDB), \
+                        PSKB,   1, \
+                        PSTP,   1, \
+                        USBW,   1, \
+                        PWOL,   1, \
+                        PRTC,   1, \
+                        Offset (0xDC), \
+                        OWNR,   8, \
+                        Offset (0xDF), \
+                        ECBW,   1, \
+                        Offset (0xE0), \
+                        DLYT,   8, \
+                        DLY2,   8, \
+                        BRTL,   8, \
+                        BADJ,   8, \
+                        Offset (0xE6), \
+                        SFHK,   8, \
+                        GQKS,   7, \
+                        Offset (0xF0), \
+                        ENDT,   8, \
+                        Offset (0xF4), \
+                        SFAN,   8, \
+                        Offset (0xFA), \
+                        VERN,   32\
+//\
+into device label EC0 code_regex VERN,\\s+32 replace_matched begin VER0,8,VER1,8,VER2,8,VER3,8 end;\
+\
+^^EC0.VERN\
+//\
+into method label WMAB code_regex \\^\\^EC0.VERN replaceall_matched begin B1B4(^^EC0.VER0,^^EC0.VER1,^^EC0.VER2,^^EC0.VER3) end;\
+\
+                    \}\
+\
+\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+Field (ERAM, ByteAcc, NoLock, Preserve)\
+                    \{\
+                        Offset (0x18), \
+                        SMPR,   8, \
+                        SMST,   8, \
+                        SMAD,   8, \
+                        SMCM,   8, \
+                        SMD0,   256,    //
+\f1 \'ce\'de
+\f0 \
+                        BCNT,   8, \
+                        SMAA,   8, \
+                        BATD,   16      //
+\f1 \'ce\'de
+\f0 \
+                    \}\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+ Field (ERAM, ByteAcc, NoLock, Preserve)\
+                    \{\
+                        Offset (0x04), \
+                        FLD0,   64			//
+\f1 \'ce\'de
+\f0 \
+                    \}\
+\
+                    Field (ERAM, ByteAcc, NoLock, Preserve)\
+                    \{\
+                        Offset (0x04), \
+                        FLD1,   128		//
+\f1 \'ce\'de
+\f0 \
+                    \}\
+\
+                    Field (ERAM, ByteAcc, NoLock, Preserve)\
+                    \{\
+                        Offset (0x04), \
+                        FLD2,   192		//
+\f1 \'ce\'de
+\f0 \
+                    \}\
+\
+                    Field (ERAM, ByteAcc, NoLock, Preserve)\
+                    \{\
+                        Offset (0x04), \
+                        FLD3,   256		//
+\f1 \'ce\'de
+\f0 \
+                    \}\
+\
+\
+\
+\
+\
+}
