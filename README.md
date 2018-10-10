@@ -26,9 +26,11 @@
 > 2018.10.10
 
 + 添加SSDT，以加载两个X86、AppleLPC、AppleHDMP
+
 + 删除多余Kext，减小EFI体积大小
-+ 更新`ACPIBatteryManager.kext`版本为最新版本
-+ 更换`ApplePS2SmartTouchPad.kext`为`VoodooPS2Controller.kext`，解决触控板右击失效（`ApplePS2SmartTouchPad.kext`必须按住Ctrl键再单击才可以实现右击）
+
++ 更新`ACPIBatteryManager.kext`、`USBInjectAll.kext`版本为最新版本
+
 
 
 
@@ -37,13 +39,15 @@
 + 升级系统至Mac Mojave（18A191）
 + 解决开机鼠标卡顿BUG
 + 解决HD4600局部花屏BUG
-+ 解决USB3.0速度只为480MB/S问题
++ 解决USB3.0速度只有480MB/S问题
 
 
 
 ### 目前存在的已知BUG
 
-- 系统偏好设置 -> 触控板  提示`找不到触控板`（更换为`VoodooPS2Controller.kext`出现此BUG）
+- SD卡未能驱动
+  -  [PCI读卡器驱动](http://bbs.pcbeta.com/viewthread-1761527-1-1.html)、 [PCI读卡器是否可以驱动](http://bbs.pcbeta.com/viewthread-1748821-1-1.html)
+- 触控板右击失效（`ApplePS2SmartTouchPad.kext`必须按住Ctrl键再单击才可以实现右击）
 - ……（待发现）
 
 
@@ -70,10 +74,10 @@
 
 ## Hackintosh进阶教程
 
-1.  [电池电量补丁制作教程](http://bbs.pcbeta.com/viewthread-1595139-1-1.html)
-2.  [给DSDT/SSDT打补丁，实现笔记本亮度调节](http://bbs.pcbeta.com/viewthread-1571456-1-1.html)
-3. [HiDPI 是什么？以及黑苹果如何开启 HiDPI](http://www.sqlsec.com/2018/09/hidpi.html)
-4.  [PCI设备列表显示](http://bbs.pcbeta.com/viewthread-1740881-1-1.html)
+1.  电池图标显示：[电池电量补丁制作教程](http://bbs.pcbeta.com/viewthread-1595139-1-1.html)
+2.  笔记本亮度调节：[给DSDT/SSDT打补丁，实现笔记本亮度调节](http://bbs.pcbeta.com/viewthread-1571456-1-1.html)
+3. 开启HiDPI：[HiDPI 是什么？以及黑苹果如何开启 HiDPI](http://www.sqlsec.com/2018/09/hidpi.html)
+4.  系统报告 -> 中显示PCI设备： [PCI设备列表显示](http://bbs.pcbeta.com/viewthread-1740881-1-1.html)
 5. ……（待更新）
 
 
@@ -112,5 +116,6 @@
    ```
 
 4. ……（待更新）
+
 
 
