@@ -95,7 +95,7 @@
    Comment：1536MB -> 2048MB for HD4600 Mobile
    ```
 
-3. USB3.0 补丁如下：
+3. USB3.0 补丁（需配合最新版本的[USB-Inject-All](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/)）如下：
 
    ``` 
    ==10.14.1==
