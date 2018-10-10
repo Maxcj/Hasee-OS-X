@@ -9,9 +9,9 @@
 |       CPU       |               英特尔 第四代酷睿 i5-4210M               |
 |      主板       | Type2 - Board Vendor Name1 Type2 - Board Product Name1 |
 |      内存       |                 三星 DDR3L 1600MHz 8GB                 |
-| 硬盘（Windows） |        三星  MZMPC128HBFU-000MV (128GB固态硬盘)        |
-| 硬盘（Mac OS）  |         金士顿  SUV400S37120G (120GB固态硬盘)          |
-|  硬盘（Data）   |              希捷 ST1000LM048-2E7172 1TB               |
+| 硬盘（Windows） |       三星  MZMPC128HBFU-000MV （128GB固态硬盘）       |
+| 硬盘（Mac OS）  |        金士顿  SUV400S37120G （120GB固态硬盘）         |
+|  硬盘（Data）   |         希捷 ST1000LM048-2E7172（1TB机械硬盘）         |
 |      独显       |               Nvidia GeForce 940M（2GB）               |
 |      核显       |                英特尔 HD Graphics 4600                 |
 |      声卡       |      瑞昱  @ 英特尔 Lynx Point  高保真音频 ALC282      |
@@ -53,9 +53,9 @@
 
 + 引导驱动（四叶草）：[Clover](https://github.com/Dids/clover-builder/releases)
 + 安装Hackintosh必备：[FakeSMC](https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek/downloads/)
-+ 音频仿冒：[AppleALC](https://github.com/acidanthera/AppleALC/releases)
-+ GPU补丁（需配合Lilu）：[WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases)
 + 驱动扩展库：[Lilu](https://github.com/acidanthera/Lilu/releases)
++ 音频仿冒（需配合Lilu）：[AppleALC](https://github.com/acidanthera/AppleALC/releases)
++ GPU补丁（需配合Lilu）：[WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases)
 + 电池管理：[ACPIBatteryManager](https://bitbucket.org/RehabMan/os-x-acpi-battery-driver/downloads/)
 + 有线网卡：[RTL8111](https://github.com/Mieze/RTL8111_driver_for_OS_X/releases)
 + 触控板：[Voodoo-I2C-Controller](https://github.com/alexandred/VoodooI2C/releases)、[Voodoo-PS2-Controller](https://bitbucket.org/RehabMan/os-x-voodoo-ps2-controller/downloads/)
@@ -66,7 +66,7 @@
 
 
 
-##Hackintosh进阶教程
+## Hackintosh进阶教程
 
 1.  [电池电量补丁制作教程](http://bbs.pcbeta.com/viewthread-1595139-1-1.html)
 2.  [给DSDT/SSDT打补丁，实现笔记本亮度调节](http://bbs.pcbeta.com/viewthread-1571456-1-1.html)
@@ -79,13 +79,13 @@
 
 1. 开机鼠标卡顿，进入桌面后流畅
 
-   > 参照远景论坛教程：[[12.4~12.6] HD4600 开机后鼠标卡顿得到完美的解决！不需要换机型！！不是灌水！！！](http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1738959)
+   > 参照教程：[[12.4~12.6] HD4600 开机后鼠标卡顿得到完美的解决！不需要换机型！！不是灌水！！！](http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1738959)
 
 2. HD4600局部花屏：
 
    > 将显存增加至2048MB
 
-3. USB3.0补丁如下：
+3. USB3.0 补丁如下：
 
 ```
    Name：com.apple.driver.AppleIntelFramebufferAzul
