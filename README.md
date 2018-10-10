@@ -21,7 +21,6 @@
 
 
 
-<<<<<<< HEAD
 ### 更新日志
 
 > 2018.10.10
@@ -42,18 +41,41 @@
 
 
 
-### 已知BUG
+### 目前存在的已知BUG
 
-- `系统偏好设置 -> 触控板`提示找不到触控板（更换为`VoodooPS2Controller.kext`出现此BUG）
+- 系统偏好设置 -> 触控板  提示`找不到触控板`（更换为`VoodooPS2Controller.kext`出现此BUG）
+- ……（待发现）
 
 
+
+
+### Clover以及一些常用的Kext下载地址
+
++ 引导驱动（四叶草）：[Clover](https://github.com/Dids/clover-builder/releases)
++ 安装Hackintosh必备：[FakeSMC](https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek/downloads/)
++ 音频仿冒：[AppleALC](https://github.com/acidanthera/AppleALC/releases)
++ GPU补丁（需配合Lilu）：[WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases)
++ 驱动扩展库：[Lilu](https://github.com/acidanthera/Lilu/releases)
++ 电池管理：[ACPIBatteryManager](https://bitbucket.org/RehabMan/os-x-acpi-battery-driver/downloads/)
++ 有线网卡：[RTL8111](https://github.com/Mieze/RTL8111_driver_for_OS_X/releases)
++ 触控板：[Voodoo-I2C-Controller](https://github.com/alexandred/VoodooI2C/releases)、[Voodoo-PS2-Controller](https://bitbucket.org/RehabMan/os-x-voodoo-ps2-controller/downloads/)
++ USB：[USB-Inject-All](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/)
++ 伪造硬件ID：[FakePCIID](https://bitbucket.org/RehabMan/os-x-fake-pci-id/downloads/)
++ 动态电源管理（需配合Lilu）：[CPUFriend](https://github.com/acidanthera/CPUFriend/releases)
++ ……（待更新）
+
+
+
+##Hackintosh进阶教程
+
+1.  [电池电量补丁制作教程](http://bbs.pcbeta.com/viewthread-1595139-1-1.html)
+2.  [给DSDT/SSDT打补丁，实现笔记本亮度调节](http://bbs.pcbeta.com/viewthread-1571456-1-1.html)
+3. [HiDPI 是什么？以及黑苹果如何开启 HiDPI](http://www.sqlsec.com/2018/09/hidpi.html)
+4. ……（待更新）
 
 
 
 ### 安装Mac Mojave的一些问题
-=======
-### macOS High Sierra升级至Mac Mojave的一些问题
->>>>>>> ed7ab68c5be07d38530bed097efd4de93cb1e8ff
 
 1. 开机鼠标卡顿，进入桌面后流畅
 
@@ -63,47 +85,12 @@
 
    > 将显存增加至2048MB
 
-<<<<<<< HEAD
-   + 补丁如下
-=======
-   - 补丁如下
->>>>>>> ed7ab68c5be07d38530bed097efd4de93cb1e8ff
+3. USB3.0补丁如下：
 
-   ```
+```
    Name：com.apple.driver.AppleIntelFramebufferAzul
    Find：01030303 00000002 00003001 00006000 00000060
    Replace：01030303 00000002 00003001 00009000 00000080
    Comment：1536MB -> 2048MB for HD4600 Mobile
-   ```
+```
 
-<<<<<<< HEAD
-
-
-### Clover以及一些常用的Kext下载地址
-
-+ 引导驱动（四叶草）：[Clover](https://github.com/Dids/clover-builder/releases)
-
-+ 安装Hackintosh必备：[FakeSMC](https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek/downloads/)
-
-+ 音频仿冒：[AppleALC](https://github.com/acidanthera/AppleALC/releases)
-+ [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases)
-+ [Lilu](https://github.com/acidanthera/Lilu/releases)
-+ 电池管理：[ACPIBatteryManager](https://bitbucket.org/RehabMan/os-x-acpi-battery-driver/downloads/)
-+ 有线网卡：[RTL8111](https://github.com/Mieze/RTL8111_driver_for_OS_X/releases)
-+ 触控板：[Voodoo-I2C-Controller](https://github.com/alexandred/VoodooI2C/releases)、[Voodoo-PS2-Controller](https://bitbucket.org/RehabMan/os-x-voodoo-ps2-controller/downloads/)
-+ USB：[USB-Inject-All](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/)
-+ [FakePCIID](https://bitbucket.org/RehabMan/os-x-fake-pci-id/downloads/)
-+ 动态电源管理（需配合Lilu）：[CPUFriend](https://github.com/acidanthera/CPUFriend/releases)
-=======
-3. USB3.0
-
-   - 补丁如下
-
-   ```
-   Name：com.apple.driver.usb.AppleUSBXHCI
-   Find：83FB0F0F 83030500 00
-   Replace：83FB0F90 90909090 90
-   Comment：disable port limit in XHCI kext (credit PMHeart)
-   ```
-
->>>>>>> ed7ab68c5be07d38530bed097efd4de93cb1e8ff
