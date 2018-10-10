@@ -58,10 +58,12 @@
 + GPU补丁（需配合Lilu）：[WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases)
 + 电池管理：[ACPIBatteryManager](https://bitbucket.org/RehabMan/os-x-acpi-battery-driver/downloads/)
 + 有线网卡：[RTL8111](https://github.com/Mieze/RTL8111_driver_for_OS_X/releases)
++ Broadcom蓝牙驱动：[BrcmPatchRAM](https://bitbucket.org/RehabMan/os-x-brcmpatchram/downloads/)
 + 触控板：[Voodoo-I2C-Controller](https://github.com/alexandred/VoodooI2C/releases)、[Voodoo-PS2-Controller](https://bitbucket.org/RehabMan/os-x-voodoo-ps2-controller/downloads/)
 + USB：[USB-Inject-All](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/)
 + 伪造硬件ID：[FakePCIID](https://bitbucket.org/RehabMan/os-x-fake-pci-id/downloads/)
 + 动态电源管理（需配合Lilu）：[CPUFriend](https://github.com/acidanthera/CPUFriend/releases)
++ 解决睡眠无声：[Codec-Commander](https://bitbucket.org/RehabMan/os-x-eapd-codec-commander/downloads/)
 + ……（待更新）
 
 
@@ -71,7 +73,8 @@
 1.  [电池电量补丁制作教程](http://bbs.pcbeta.com/viewthread-1595139-1-1.html)
 2.  [给DSDT/SSDT打补丁，实现笔记本亮度调节](http://bbs.pcbeta.com/viewthread-1571456-1-1.html)
 3. [HiDPI 是什么？以及黑苹果如何开启 HiDPI](http://www.sqlsec.com/2018/09/hidpi.html)
-4. ……（待更新）
+4.  [PCI设备列表显示](http://bbs.pcbeta.com/viewthread-1740881-1-1.html)
+5. ……（待更新）
 
 
 
@@ -83,14 +86,31 @@
 
 2. HD4600局部花屏：
 
-   > 将显存增加至2048MB
+   > 打补丁将显存增加至2048MB
 
-3. USB3.0 补丁如下：
-
-```
+   ```
    Name：com.apple.driver.AppleIntelFramebufferAzul
    Find：01030303 00000002 00003001 00006000 00000060
    Replace：01030303 00000002 00003001 00009000 00000080
    Comment：1536MB -> 2048MB for HD4600 Mobile
-```
+   ```
+
+3. USB3.0 补丁如下：
+
+   ``` 
+   ==10.14.1==
+   Name: com.apple.driver.usb.AppleUSBXHCI
+   Find: 83 FB 0F 0F 83 8F 04 00 00
+   Replace: 83 FB 0F 90 90 90 90 90 90
+   Comment: USB Port limit patch 10.14.1 18B45d (credits Ricky)
+   
+   ==10.14==
+   Name: com.apple.driver.usb.AppleUSBXHCI
+   Find: 83FB0F0F 83030500 00
+   Replace: 83FB0F90 90909090 90
+   Comment: USB Port limit patch 10.14 18A191
+   ```
+
+4. ……（待更新）
+
 
