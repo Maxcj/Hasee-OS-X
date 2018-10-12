@@ -2,34 +2,43 @@
 
 
 
-### 电脑配置
+## 电脑配置
 
-|     设备名      |                          型号                          |
-| :-------------: | :----------------------------------------------------: |
-|       CPU       |               英特尔 第四代酷睿 i5-4210M               |
-|      主板       | Type2 - Board Vendor Name1 Type2 - Board Product Name1 |
-|      内存       |                 三星 DDR3L 1600MHz 8GB                 |
-| 硬盘（Windows） |       三星  MZMPC128HBFU-000MV （128GB固态硬盘）       |
-| 硬盘（Mac OS）  |        金士顿  SUV400S37120G （120GB固态硬盘）         |
-|  硬盘（Data）   |         希捷 ST1000LM048-2E7172（1TB机械硬盘）         |
-|      独显       |               Nvidia GeForce 940M（2GB）               |
-|      核显       |                英特尔 HD Graphics 4600                 |
-|      声卡       |      瑞昱  @ 英特尔 Lynx Point  高保真音频 ALC282      |
-|    有线网卡     |   瑞昱 RTL8168/8111/8112 Gigabit Ethernet Controller   |
-|    无线网卡     |      博通 Wireless 1510 Wireless-N WLAN Mini-Card      |
-|  键盘、触摸板   |             PS/2 标准键盘 + ELAN Clickpad              |
+|       设备名       |                          型号                          |   ID/备注    |
+| :----------------: | :----------------------------------------------------: | :----------: |
+|        CPU         |               英特尔 第四代酷睿 i5-4210M               |              |
+|        主板        | Type2 - Board Vendor Name1 Type2 - Board Product Name1 |              |
+|        内存        |                 三星 DDR3L 1600MHz 8GB                 |              |
+|   硬盘（Mac OS）   |        金士顿  SUV400S37120G （120GB固态硬盘）         |              |
+| 硬盘（Windows 10） |       三星  MZMPC128HBFU-000MV （128GB固态硬盘）       |              |
+|    硬盘（File）    |         希捷 ST1000LM048-2E7172（1TB机械硬盘）         |              |
+|      核心显卡      |                英特尔 HD Graphics 4600                 |              |
+|      独立显卡      |               Nvidia GeForce 940M（2GB）               | 需要屏蔽独显 |
+|        声卡        |         瑞昱  @ 英特尔 Lynx Point  高保真音频          |    ALC282    |
+|      有线网卡      |   瑞昱 RTL8168/8111/8112 Gigabit Ethernet Controller   |   RTL8111    |
+|      无线网卡      |      博通 Wireless 1510 Wireless-N WLAN Mini-Card      |     免驱     |
+|    键盘、触摸板    |             PS/2 标准键盘 + ELAN Clickpad              |              |
+|     SD卡读卡器     |                Realtek PCIE CardReader                 |  0x522710EC  |
 
 
 
-### 更新日志
+## 更新日志
+
+> 2018.10.13
+
++ 更新DSDT以添加PCI设备列表
++ 驱动原生`AppleBacklight.kext`修复小太阳滑块等级不均匀Bug
+
+
+
+
 
 > 2018.10.10
 
-+ 添加SSDT，以加载两个X86、AppleLPC、AppleHDMP
-
++ 添加SSDT，以加载两个X86、AppleLPC、AppleHDMP修复睡眠问题
 + 删除多余Kext，减小EFI体积大小
-
 + 更新`ACPIBatteryManager.kext`、`USBInjectAll.kext`版本为最新版本
+
 
 
 
@@ -43,7 +52,7 @@
 
 
 
-### 目前存在的已知BUG
+## 目前存在的已知BUG
 
 - SD卡未能驱动
   -  [PCI读卡器驱动](http://bbs.pcbeta.com/viewthread-1761527-1-1.html)、 [PCI读卡器是否可以驱动](http://bbs.pcbeta.com/viewthread-1748821-1-1.html)
@@ -52,8 +61,7 @@
 
 
 
-
-### Clover以及一些常用的Kext下载地址
+## Clover以及一些常用的Kext下载地址
 
 + 引导驱动（四叶草）：[Clover](https://github.com/Dids/clover-builder/releases)
 + 安装Hackintosh必备：[FakeSMC](https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek/downloads/)
@@ -82,7 +90,7 @@
 
 
 
-### 安装Mac Mojave的一些问题
+## 安装Mac Mojave的一些问题
 
 1. 开机鼠标卡顿，进入桌面后流畅
 
@@ -119,3 +127,54 @@
 
 
 
+## 部分截图
+
+桌面
+
+![桌面](http://pggninums.bkt.clouddn.com/%E6%A1%8C%E9%9D%A2.png)
+
+
+
+关于本机
+
+![关于本机](http://pggninums.bkt.clouddn.com/%E5%85%B3%E4%BA%8E%E6%9C%AC%E6%9C%BA.png)
+
+显卡
+
+![显卡](http://pggninums.bkt.clouddn.com/%E6%98%BE%E5%8D%A1.png)
+
+水波纹效果
+
+![水波纹效果](http://pggninums.bkt.clouddn.com/%E6%B0%B4%E6%B3%A2%E7%BA%B9.png)
+
+声卡
+
+![声卡](http://pggninums.bkt.clouddn.com/%E5%A3%B0%E5%8D%A1.png)
+
+有线网卡
+
+![有线网卡](http://pggninums.bkt.clouddn.com/%E6%9C%89%E7%BA%BF%E7%BD%91%E5%8D%A1.png)
+
+无线网卡
+
+![无线网卡](http://pggninums.bkt.clouddn.com/%E6%97%A0%E7%BA%BF%E7%BD%91%E5%8D%A1.png)
+
+原生电源管理
+
+![电源管理](http://pggninums.bkt.clouddn.com/%E5%8E%9F%E7%94%9F%E7%94%B5%E6%BA%90%E7%AE%A1%E7%90%86.png)
+
+小太阳快捷键
+
+![小太阳快捷键](http://pggninums.bkt.clouddn.com/%E5%B0%8F%E5%A4%AA%E9%98%B3.png)
+
+电源电池
+
+![电源信息](http://pggninums.bkt.clouddn.com/%E7%94%B5%E6%BA%90.png)
+
+USB
+
+![USB](http://pggninums.bkt.clouddn.com/USB.png)
+
+HIDPI
+
+![HIDPI](http://pggninums.bkt.clouddn.com/HIDPI.png)
