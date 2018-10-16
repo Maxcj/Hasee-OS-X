@@ -22,14 +22,29 @@
 
 
 
+##  EFI下载
+
++ 最新版本：`2.0.3`
++ [下载地址](https://github.com/Maxcj/Hasee-OS-X/releases)
+
+
+
 ## 更新日志
+
+> 2018.10.16
+
++ 修改`DSDT.aml`
++ 使用`Intel FB-Patcher`修补USB端口
++ 添加`USBPorts.kext`，去除`USBInjectAll.kext` 以及关闭端口限制的补丁
+  +  [详细教程参考黑果小兵的部落阁](https://blog.daliansky.net/Intel-FB-Patcher-tutorial-and-insertion-pose.html)
+
+
+
+
 
 > 2018.10.13
 
-+ 更新DSDT以添加PCI设备列表
 + 驱动原生`AppleBacklight.kext`修复小太阳滑块等级不均匀Bug
-
-
 
 
 
