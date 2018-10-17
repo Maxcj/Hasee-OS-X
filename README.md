@@ -37,6 +37,7 @@
 + 使用`Intel FB-Patcher`修补USB端口
 + 添加`USBPorts.kext`，去除`USBInjectAll.kext` 以及关闭端口限制的补丁
   +  [详细教程参考黑果小兵的部落阁](https://blog.daliansky.net/Intel-FB-Patcher-tutorial-and-insertion-pose.html)
++ 修改`ApplePS2SmartTouchPad.kext`实现小键盘开机自启动
 
 
 
