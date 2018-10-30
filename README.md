@@ -177,7 +177,7 @@
 
 ### 原生电源管理
 
-> Haswell框架 HD4600 只需要加载两个`X86`、`AppleLPC`、`AppleHDMP`即可。
+> Haswell框架 HD4600 只需要加载两个`X86`、`AppleLPC`、`AppleHPET`即可。
 
 ![电源管理](http://pggninums.bkt.clouddn.com/%E5%8E%9F%E7%94%9F%E7%94%B5%E6%BA%90%E7%AE%A1%E7%90%86.png)
 
