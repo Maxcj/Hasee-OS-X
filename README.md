@@ -24,12 +24,26 @@
 
 ##  EFI下载
 
-+ 最新版本：`2.0.3`
++ 最新版本：`2.1`
 + [下载地址](https://github.com/Maxcj/Hasee-OS-X/releases)
 
 
 
 ## 更新日志
+
+> 2018.11.05
+
++ 升级系统至Mac Mojave `10.14.1（18B75）`
++ 升级`Clover`至4722
++ 升级`Lilu.kext`至1.2.8
++ 升级`AppleALC.kext`至1.3.3
++ 升级`WhateverGreen.kext`至1.2.4版本
++ 升级`FakeSMC.kext`至最新版本
++ 添加`Sinetek-rtsx.kext`驱动以支持SD存储卡
+
+
+
+
 
 > 2018.10.16
 
@@ -70,7 +84,7 @@
 
 ## 目前存在的已知BUG
 
-- SD卡未能驱动
+- ~~SD卡未能驱动~~
   -  [PCI读卡器驱动](http://bbs.pcbeta.com/viewthread-1761527-1-1.html)、 [PCI读卡器是否可以驱动](http://bbs.pcbeta.com/viewthread-1748821-1-1.html)
 - 触控板右击失效（`ApplePS2SmartTouchPad.kext`必须按住Ctrl键再单击才可以实现右击）
 - ……（待发现）
