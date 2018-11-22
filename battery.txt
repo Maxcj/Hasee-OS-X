@@ -1,4 +1,4 @@
-#神舟战神K4极速版-电池需要拆分的字段以及方法
+﻿#神舟战神K4极速版-电池需要拆分的字段以及方法
 
 into method label B1B2 remove_entry;
 into definitionblock code_regex . insert
@@ -90,10 +90,6 @@ into device label EC0 code_regex MBCV,\s+16 replace_matched begin BCV0,8, BCV1,8
 into device label EC0 code_regex VERN,\s+32 replace_matched begin ERN0,8,ERN1,8,ERN2,8,ERN3,8 end;
 into device label EC0 code_regex SMW0,\s+16 replace_matched begin MW00,8, MW01,8 end;
 
-
-
-
-
 into method label SMRD code_regex \(SMW0 replaceall_matched begin (B1B2(MW00, MW01) end;
 into method label UPBI code_regex \(\^\^PCI0.LPCB.EC0.DSCP replaceall_matched begin (B1B2(^^PCI0.LPCB.EC0.SCP0,^^PCI0.LPCB.EC0.SCP1) end;
 into method label UPBS code_regex \(\^\^PCI0.LPCB.EC0.DSCP replaceall_matched begin (B1B2(^^PCI0.LPCB.EC0.SCP0,^^PCI0.LPCB.EC0.SCP1) end;
@@ -104,20 +100,10 @@ into method label UPBS code_regex \(\^\^PCI0.LPCB.EC0.MBRM replaceall_matched be
 into method label UPBS code_regex ,\s\^\^PCI0.LPCB.EC0.MBRM replaceall_matched begin , B1B2(^^PCI0.LPCB.EC0.BRM0,^^PCI0.LPCB.EC0.BRM1) end;
 into method label UPBS code_regex \(\^\^PCI0.LPCB.EC0.MBCV replaceall_matched begin (B1B2(^^PCI0.LPCB.EC0.BCV0,^^PCI0.LPCB.EC0.BCV1) end;
 
-
-
 into method label WMAB code_regex \(\^\^EC0.VERN replaceall_matched begin (B1B4(^^EC0.ERN0,^^EC0.ERN1,^^EC0.ERN2,^^EC0.ERN3) end;
 into method label WMBB code_regex \(\^\^EC0.VERN replaceall_matched begin (B1B4(^^EC0.ERN0,^^EC0.ERN1,^^EC0.ERN2,^^EC0.ERN3) end;
 
-
-
 into method label SMWR code_regex Store\s\(Arg3,\sSMW0\) replaceall_matched begin Store(ShiftRight(Arg3,8), MW01)\nStore(Arg3, MW00) end;
-
-
-
-
-
-
 
 into method label SMRD code_regex \(FLD0 replaceall_matched begin (RECB(0x04, 64) end;
 into method label SMRD code_regex \(FLD1 replaceall_matched begin (RECB(0x04, 128) end;
@@ -125,12 +111,5 @@ into method label SMRD code_regex \(FLD2 replaceall_matched begin (RECB(0x04, 19
 into method label SMRD code_regex \(FLD3 replaceall_matched begin (RECB(0x04, 256) end;
 into method label UPBI code_regex \(\^\^PCI0.LPCB.EC0.BANA replaceall_matched begin (^^PCI0.LPCB.EC0.RECB(0xD2,64) end;
 
-
-
 into method label SMWR code_regex Store\s\(Arg3,\sSMD0\) replaceall_matched begin WECB(0x1C,256,Arg3) end;
 into method label IVBI code_regex Store\s\(Zero,\s\^\^PCI0.LPCB.EC0.BANA\) replaceall_matched begin ^^PCI0.LPCB.EC0.WECB(0xD2,64,Zero) end;
-
-
-
-
-
