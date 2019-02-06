@@ -24,12 +24,24 @@
 
 ##  EFI下载
 
-+ 最新版本：`2.1`
++ 最新版本：`2.2`
 + [下载地址](https://github.com/Maxcj/Hasee-OS-X/releases)
 
 
 
 ## 更新日志
+
+>`2.2`版本
+>
+>2019.02.06
+
++ 升级系统至Mac Mojave `10.14.3（18D42）`
++ 升级`Clover`至4871
++ 升级`Lilu.kext`至1.3.3
++ 升级`AppleALC.kext`至1.3.5
++ 升级`CPUFriend.kext`至1.1.6版本
+
+
 
 
 
@@ -44,8 +56,6 @@
 + 升级`WhateverGreen.kext`至1.2.4版本
 + 升级`FakeSMC.kext`至最新版本
 + 添加`Sinetek-rtsx.kext`驱动以支持SD存储卡
-
-
 
 
 
