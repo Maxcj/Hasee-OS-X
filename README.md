@@ -173,57 +173,61 @@
 
 ### 桌面
 
-![桌面](http://pggninums.bkt.clouddn.com/%E6%A1%8C%E9%9D%A2.png)
+![桌面](./Screenshots/desktop.png)
 
 
 
 ### 关于本机
 
-![关于本机](http://pggninums.bkt.clouddn.com/%E5%85%B3%E4%BA%8E%E6%9C%AC%E6%9C%BA.png)
+![关于本机](./Screenshots/about.png)
 
 ### 显卡
 
-![显卡](http://pggninums.bkt.clouddn.com/%E6%98%BE%E5%8D%A1.png)
+![显卡](./Screenshots/GPU.png)
 
 ### 水波纹效果
 
-![水波纹效果](http://pggninums.bkt.clouddn.com/%E6%B0%B4%E6%B3%A2%E7%BA%B9.png)
+![水波纹效果](./Screenshots/waterflower.png)
 
 ### 声卡
 
-![声卡](http://pggninums.bkt.clouddn.com/%E5%A3%B0%E5%8D%A1.png)
+![声卡](./Screenshots/audio.png)
 
 ### 有线网卡
 
-![有线网卡](http://pggninums.bkt.clouddn.com/%E6%9C%89%E7%BA%BF%E7%BD%91%E5%8D%A1.png)
+![有线网卡](./Screenshots/network.png)
 
 ### 无线网卡
 
-![无线网卡](http://pggninums.bkt.clouddn.com/%E6%97%A0%E7%BA%BF%E7%BD%91%E5%8D%A1.png)
+![无线网卡](./Screenshots/wifi.png)
 
 ### 原生电源管理
 
 > Haswell框架 HD4600 只需要加载两个`X86`、`AppleLPC`、`AppleHPET`即可。
 
-![电源管理](http://pggninums.bkt.clouddn.com/%E5%8E%9F%E7%94%9F%E7%94%B5%E6%BA%90%E7%AE%A1%E7%90%86.png)
+![电源管理](./Screenshots/power1.png)
+
+![电源管理](./Screenshots/power2.png)
+
+![电源管理](./Screenshots/power3.png)
 
 ### 小太阳快捷键
 
 > Clover中勾选`AddPLNF`，给`DSDT`打补丁实现`17级均匀亮度`，小太阳快捷键外接USB接盘修改快捷键即可。
 
-![小太阳快捷键](http://pggninums.bkt.clouddn.com/%E5%B0%8F%E5%A4%AA%E9%98%B3.png)
+![小太阳快捷键](./Screenshots/lighting.png)
 
 ### 电源电池
 
-![电源信息](http://pggninums.bkt.clouddn.com/%E7%94%B5%E6%BA%90.png)
+![电源信息](./Screenshots/battery.png)
 
 ### USB
 
-![USB](http://pggninums.bkt.clouddn.com/USB.png)
+![USB](./Screenshots/USB.png)
 
 ### HIDPI
 
 > 感谢开源项目：[one-key-hidpi](https://github.com/xzhih/one-key-hidpi)
 
-![HIDPI](http://pggninums.bkt.clouddn.com/HIDPI.png)
+![HIDPI](./Screenshots/HIDPI.png)
 
