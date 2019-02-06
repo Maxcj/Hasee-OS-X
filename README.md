@@ -223,11 +223,11 @@
 
 ### USB
 
-![USB](./Screenshots/USB.png)
+![USB](./Screenshots/usb.png)
 
 ### HIDPI
 
 > 感谢开源项目：[one-key-hidpi](https://github.com/xzhih/one-key-hidpi)
 
-![HIDPI](./Screenshots/HIDPI.png)
+![HIDPI](./Screenshots/hidpi.png)
 
