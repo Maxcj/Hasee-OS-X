@@ -31,6 +31,17 @@
 
 ## 更新日志
 
+> 2019.07.01
+
+- 升级系统至Mac Mojave `10.14.5（18F203）`
+- 升级`Clover`至最新版本
+- 升级`Lilu.kext`至1.3.6
+- 升级`AppleALC.kext`至1.3.8
+- 升级`CPUFriend.kext`至1.1.7
+- 升级`WhateverGreen.kext`至1.2.9
+
+
+
 >`2.2`版本
 >
 >2019.02.06
